@@ -1889,3 +1889,102 @@ html { overflow-x: clip; }
   .hero-actions .btn svg { width: 16px; height: 16px; }
   .hero-actions .btn-icon { width: 40px; height: 40px; padding: 0; }
 }
+
+/* ---------- Modal: native pointer must come back ----------
+   A native <dialog> renders in the browser's top layer, above every z-index,
+   so the custom .cursor (z-index 200) is hidden behind it. Restore the real
+   pointer for the whole document while any modal is open. */
+body.dialog-open,
+body.dialog-open button,
+body.dialog-open a { cursor: auto; }
+body.dialog-open .cursor { display: none !important; }
+body.dialog-open .project-dialog,
+body.dialog-open .project-dialog a,
+body.dialog-open .project-dialog button { cursor: pointer; }
+/* CSS-only safety net in case the class is ever out of sync */
+body:has(dialog[open]) { cursor: auto; }
+body:has(dialog[open]) .cursor { display: none; }
+body:has(dialog[open]) button,
+body:has(dialog[open]) a { cursor: pointer; }
+
+/* ---------- Big live buttons on the two website projects ---------- */
+.card-foot {
+  margin-top: auto; padding-top: 18px;
+  display: flex; flex-direction: column; align-items: stretch; gap: 12px;
+}
+.card-foot .card-links { margin-top: 0; padding-top: 0; }
+.card-foot .card-open { margin-top: 0; align-self: flex-start; }
+.card-live {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  width: 100%; padding: 14px 18px; border-radius: 14px;
+  background: linear-gradient(100deg, #ff8b45, #ff6b1a);
+  color: #170900;
+  font-family: "Syne", sans-serif; font-weight: 700; font-size: 15px;
+  letter-spacing: -0.01em; text-align: left;
+  box-shadow: 0 10px 28px rgba(255, 107, 26, 0.18);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s, background 0.3s;
+}
+.card-live:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(100deg, #ff9c5c, #ff7a2f);
+  box-shadow: 0 16px 40px rgba(255, 107, 26, 0.32);
+}
+.card-live:active { transform: translateY(0) scale(0.99); }
+.card-live.teal {
+  background: linear-gradient(100deg, #5fe0dc, #2aa9b8);
+  color: #04201f;
+  box-shadow: 0 10px 28px rgba(43, 190, 190, 0.16);
+}
+.card-live.teal:hover {
+  background: linear-gradient(100deg, #7ceae5, #35bfcd);
+  box-shadow: 0 16px 40px rgba(43, 190, 190, 0.3);
+}
+.card-live svg { width: 20px; height: 20px; flex: 0 0 auto; }
+.card-live-label { display: flex; flex-direction: column; gap: 2px; }
+.card-live-label small {
+  font-family: "Outfit", sans-serif; font-size: 10px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.72;
+}
+
+/* ---------- Bigger contact details ---------- */
+.hero-contact {
+  margin-top: 26px; padding-top: 20px;
+  border-top: 1px solid var(--line); max-width: 540px;
+}
+.hc-kicker {
+  display: block; font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+}
+.hc-mail {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: "Syne", sans-serif; font-size: clamp(19px, 2.1vw, 27px);
+  letter-spacing: -0.035em; color: var(--text);
+  border-bottom: 1px solid rgba(255, 107, 26, 0.5); padding-bottom: 3px;
+  transition: color 0.3s, border-color 0.3s;
+}
+.hc-mail:hover { color: var(--accent-2); border-color: var(--accent); }
+.hc-mail span { color: var(--accent); font-size: 0.78em; }
+.hc-socials { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 14px; }
+.hc-socials a { font-size: 13px; color: var(--muted); transition: color 0.3s; }
+.hc-socials a strong { color: var(--text); font-weight: 600; margin-left: 5px; }
+.hc-socials a:hover { color: var(--accent-2); }
+
+.contact .mail { font-size: clamp(25px, 5vw, 62px); }
+.contact .contact-links { margin-bottom: 34px; }
+.contact .copy-mail { padding: 10px 18px; font-size: 13px; }
+.contact .social { grid-template-columns: 42px 1fr; gap: 3px 14px; min-width: 250px; padding: 20px 22px; border-radius: 20px; }
+.contact .social-ic { width: 42px; height: 42px; border-radius: 12px; }
+.contact .social-ic svg { width: 22px; height: 22px; }
+.contact .social-label { font-size: 12px; }
+.contact .social strong { font-size: 17px; }
+.contact .contact-lead { font-size: 17px; }
+
+@media (max-width: 700px) {
+  .hero-contact { margin-top: 22px; }
+  .hc-mail { font-size: clamp(18px, 5vw, 24px); }
+  .contact .social { min-width: 0; width: 100%; }
+}
+@media (max-width: 480px) {
+  .card-live { padding: 13px 15px; font-size: 14px; }
+  .card-live-label small { font-size: 9px; }
+}

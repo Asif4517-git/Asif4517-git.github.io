@@ -377,7 +377,7 @@
     lastFocused = document.activeElement;
     dialogContent.innerHTML = buildDetail(data);
     dialog.showModal();
-    document.body.classList.add("menu-open");
+    document.body.classList.add("menu-open", "dialog-open");
     dialogClose?.focus();
     $(".dialog-inner")?.scrollTo({ top: 0 });
   }
@@ -393,7 +393,7 @@
   dialogClose?.addEventListener("click", closeDetail);
   dialog?.addEventListener("click", (e) => { if (e.target === dialog) closeDetail(); });
   dialog?.addEventListener("close", () => {
-    document.body.classList.remove("menu-open");
+    document.body.classList.remove("menu-open", "dialog-open");
     lastFocused?.focus?.();
     setTimeout(() => { if (!dialog.open) dialogContent.innerHTML = ""; }, 200);
   });
