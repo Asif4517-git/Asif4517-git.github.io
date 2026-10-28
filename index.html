@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asif Shahrukh Khan — Builder · ESP32 · Full-Stack · AI</title>
-  <meta name="description" content="15-year-old IT enthusiast from Kerala. Full-stack developer, ESP32 hardware builder, and AI explorer. Don't just use technology. Build something with it." />
-  <meta name="theme-color" content="#070708" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23070708'/><text x='50%' y='54%' text-anchor='middle' dominant-baseline='middle' font-family='Georgia' font-size='36' fill='%23ff6b1a'>A</text></svg>" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asif Shahrukh Khan — Builder · ESP32 · AI · Interactive Web</title>
+  <meta name="description" content="Asif Shahrukh Khan — a Class 10 student from Kerala building ESP32 hardware, AI-assisted web projects, interactive 3D simulations and a custom RGB workspace.">
+  <meta name="theme-color" content="#070708">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preload" as="image" href="images/asif.webp">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
   <div class="grain" aria-hidden="true"></div>
   <div class="scroll-progress" aria-hidden="true"></div>
 
-  <div class="loader" id="loader">
+  <div class="loader" id="loader" aria-hidden="true">
     <div class="loader-inner">
       <p class="loader-kicker">Portfolio · 2026</p>
       <div class="loader-name">
@@ -29,20 +31,21 @@
       <span class="nav-mark">A</span>
       <span class="nav-word">Asif<span>.</span></span>
     </a>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
+      <a href="#lab">Lab</a>
       <a href="#rig">Rig</a>
       <a href="#contact" class="nav-cta" data-magnetic>Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <button class="nav-toggle" type="button" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span>
     </button>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="heroTitle">
       <div class="hero-bg" aria-hidden="true">
         <div class="orb orb-a"></div>
         <div class="orb orb-b"></div>
@@ -53,46 +56,77 @@
         <div class="hero-meta reveal">
           <span class="pill live"><i></i> Open to collabs</span>
           <span class="dot-sep"></span>
-          <span>15 · Class 10 · Thazhava, Kollam</span>
+          <span>Class 10 · Kerala, India</span>
         </div>
-        <h1 class="hero-title">
-          <span class="line reveal"><em>Asif</em></span>
-          <span class="line reveal d1">Shahrukh</span>
-          <span class="line reveal d2">Khan<span class="accent">.</span></span>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="line reveal d1"><em>Asif</em></span>
+          <span class="line reveal d2">Shahrukh</span>
+          <span class="line reveal d3">Khan<span class="accent">.</span></span>
         </h1>
-        <p class="hero-lead reveal d3">
-          IT enthusiast, full-stack developer, ESP32 hardware builder, PC nerd and AI explorer.
+        <p class="hero-lead reveal d4">
+          A Class 10 student who builds things: ESP32 hardware, AI-assisted websites and interactive 3D worlds.
           If I get an interesting idea, the first thought is usually
           <strong>“Can I build it?”</strong>
         </p>
-        <div class="hero-actions reveal d4">
+        <div class="hero-actions reveal d5">
           <a class="btn btn-fill" href="#projects" data-magnetic>
             <span>See the work</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="btn btn-ghost" href="mailto:asifsrk4517@gmail.com">Gmail</a>
           <a class="btn btn-ghost" href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-icon" href="https://www.instagram.com/asif_xrk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @asif_xrk" data-magnetic>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span class="sr-only">@asif_xrk on Instagram</span>
+          </a>
         </div>
         <ul class="hero-tags reveal d5">
-          <li>Full-Stack</li>
           <li>ESP32</li>
-          <li>AI</li>
+          <li>AI tools</li>
+          <li>Three.js</li>
           <li>Hardware</li>
-          <li>PC Enthusiast</li>
+          <li>Web dev</li>
         </ul>
+        <div class="hero-contact reveal d5">
+          <span class="hc-kicker">Get in touch</span>
+          <a class="hc-mail" href="mailto:asifsrk4517@gmail.com">asifsrk4517@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="hc-socials">
+            <a href="https://www.instagram.com/asif_xrk/" target="_blank" rel="noopener noreferrer">Instagram <strong>@asif_xrk</strong></a>
+            <a href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer">GitHub <strong>@Asif4517-git</strong></a>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-visual reveal d2">
-        <div class="portrait-stage">
-          <div class="portrait" data-tilt>
-            <div class="portrait-glow"></div>
-            <div class="portrait-frame">
-              <img src="images/asif.png" alt="Portrait of Asif Shahrukh Khan" />
+      <div class="hero-visual reveal d3">
+        <div class="workspace" id="workspace">
+          <div class="workspace-grid" aria-hidden="true"></div>
+          <canvas class="workspace-canvas" id="heroCanvas" role="img" aria-label="An interactive 3D ESP32 development board surrounded by glowing circuit traces, RGB lights and labels for my projects."></canvas>
+
+          <div class="scene-fallback" id="sceneFallback" aria-hidden="true">
+            <div class="fallback-board">
+              <span class="fb-chip">ESP32</span>
+              <span class="fb-trace t1"></span><span class="fb-trace t2"></span><span class="fb-trace t3"></span>
+              <span class="fb-node n1"></span><span class="fb-node n2"></span><span class="fb-node n3"></span>
             </div>
           </div>
-          <div class="portrait-badge">
-            <span>Builder</span>
-            <strong>Code + Hardware + AI</strong>
+
+          <div class="scene-hud">
+            <span class="scene-badge"><i></i> Interactive workbench</span>
+            <button class="scene-toggle" id="sceneToggle" type="button" aria-pressed="false">Explore 3D</button>
+          </div>
+          <p class="scene-label" id="sceneLabel" role="status" aria-live="polite"></p>
+
+          <div class="portrait-stage">
+            <div class="portrait" data-tilt>
+              <div class="portrait-glow"></div>
+              <div class="portrait-frame">
+                <img src="images/asif.webp" alt="Portrait of Asif Shahrukh Khan" width="900" height="1200">
+              </div>
+            </div>
+            <div class="portrait-badge">
+              <span>Builder</span>
+              <strong>Code + Hardware + AI</strong>
+            </div>
           </div>
         </div>
       </div>
@@ -105,29 +139,29 @@
 
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>ESP32</span><span>Full-Stack</span><span>AI</span><span>Hardware</span><span>RC Cars</span><span>GPUs</span><span>NES Console</span><span>Internet Radio</span><span>School Systems</span><span>Arduino</span><span>JavaScript</span><span>Raspberry Pi</span><span>I²S Audio</span><span>DIY</span>
-        <span>ESP32</span><span>Full-Stack</span><span>AI</span><span>Hardware</span><span>RC Cars</span><span>GPUs</span><span>NES Console</span><span>Internet Radio</span><span>School Systems</span><span>Arduino</span><span>JavaScript</span><span>Raspberry Pi</span><span>I²S Audio</span><span>DIY</span>
+        <span>ESP32</span><span>Three.js</span><span>AI models</span><span>WLED</span><span>ChemLab</span><span>NES Console</span><span>RGB lighting</span><span>School tech</span><span>Arduino</span><span>JavaScript</span><span>I²S Audio</span><span>Cursor</span><span>Messi</span><span>DIY</span>
+        <span>ESP32</span><span>Three.js</span><span>AI models</span><span>WLED</span><span>ChemLab</span><span>NES Console</span><span>RGB lighting</span><span>School tech</span><span>Arduino</span><span>JavaScript</span><span>I²S Audio</span><span>Cursor</span><span>Messi</span><span>DIY</span>
       </div>
     </div>
 
     <section class="about" id="about">
       <div class="section-head">
         <p class="eyebrow reveal">01 — About</p>
-        <h2 class="display reveal">A 15-year-old who would rather <em>build</em> than just read about it.</h2>
+        <h2 class="display reveal">A Class 10 student who would rather <em>build</em> than just read about it.</h2>
       </div>
 
       <div class="about-grid">
         <div class="about-text">
-          <p class="reveal">I’m <strong>Asif Shahrukh Khan</strong> from <strong>Kuttippuram, Thazhava, Karunagappally, Kollam</strong> — studying in Class 10 at SMHSS Patharam. I’m an IT enthusiast, developer, hardware builder, PC enthusiast and technology explorer.</p>
+          <p class="reveal">I’m <strong>Asif Shahrukh Khan</strong> from <strong>Kuttippuram, Thazhava, Karunagappally, Kollam</strong> — studying in Class 10 at SMHSS Patharam. I’m an IT enthusiast, developer, hardware builder, PC enthusiast and technology explorer, doing all of this alongside school.</p>
           <p class="reveal">The building started early. As a kid I was already taking RC cars apart, modifying them and making my own. That same itch now lives in ESP32 boards, websites, GPUs and full devices. I learn by making things real: wiring a board, shipping a dashboard, debugging the noise on a speaker.</p>
-          <p class="reveal">My biggest obsession is <strong>ESP32 and embedded electronics</strong> — displays, buttons, audio, SD cards, Bluetooth, Wi-Fi, batteries, charging circuits, amplifiers, custom hardware. Alongside that I build modern full-stack websites, often with AI as a development partner.</p>
+          <p class="reveal">I’m also a huge <strong>AI enthusiast</strong>. I explore ChatGPT, Claude, Gemini, Qwen, DeepSeek, NVIDIA Nemotron and other models — comparing how they handle real coding tasks in Arduino C++, ESP32 firmware, debugging and multi-file web projects. AI is a development partner, not an autopilot: I test, modify and debug what it gives me.</p>
           <p class="quote reveal">I would describe myself as a tech guy who likes experimenting.</p>
         </div>
 
-        <aside class="stats">
+        <aside class="stats" aria-label="Quick facts about me">
           <article class="stat reveal">
             <span class="stat-num" data-count="15">0</span>
-            <span class="stat-label">Years old. Already shipping devices.</span>
+            <span class="stat-label">Years old. Building while still in school.</span>
           </article>
           <article class="stat reveal">
             <span class="stat-num" data-count="2">0</span>
@@ -154,28 +188,28 @@
       <div class="bento">
         <article class="card card-wide reveal">
           <div class="card-icon">//</div>
-          <h3>Full-stack web</h3>
-          <p>Frontends, backends, dashboards, local web apps, school information systems, responsive interfaces and real-time displays. I treat AI as a development partner to experiment, debug and ship faster.</p>
+          <h3>Web &amp; educational software</h3>
+          <p>Frontends, dashboards, school information systems, interactive learning pages and science simulations. I treat AI as a development partner to experiment, debug and ship faster — while keeping the content clear and readable.</p>
           <ul class="chips">
-            <li>JavaScript</li><li>HTML / CSS</li><li>UI systems</li><li>Dashboards</li>
+            <li>JavaScript</li><li>HTML / CSS</li><li>React / Vite</li><li>UI systems</li>
           </ul>
         </article>
         <article class="card reveal">
           <div class="card-icon">⚡</div>
-          <h3>ESP32 & embedded</h3>
-          <p>TFT displays, I²S audio, SD cards, Bluetooth, Wi-Fi, battery systems, charging, boost converters and custom control interfaces — turned into complete devices.</p>
+          <h3>ESP32 &amp; embedded</h3>
+          <p>TFT displays, I²S audio, SD cards, buttons, sensors, Wi-Fi, battery systems, charging and boost converters — turned into complete devices.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">◎</div>
           <h3>AI-assisted building</h3>
-          <p>ChatGPT, Claude, Gemini, Kimi, DeepSeek. Not just answers — a partner for learning, planning, debugging hardware and turning ideas into prototypes.</p>
+          <p>ChatGPT, Claude, Gemini, Qwen, DeepSeek, Nemotron. Comparing models on real coding work: planning, debugging, datasheets and multi-file edits.</p>
         </article>
         <article class="card card-wide reveal">
-          <div class="card-icon">⌂</div>
-          <h3>Hardware builder</h3>
-          <p>ESP32, ESP32-S3, Raspberry Pi, speakers, amplifiers, sensors, enclosures. Software + display + buttons + audio + battery + case = a real product. I also build physical DIY vehicles — cars, buses, trucks — because ideas should become objects.</p>
+          <div class="card-icon">◇</div>
+          <h3>Creative coding &amp; hardware</h3>
+          <p>Three.js scenes, procedural geometry, interactive simulations, WLED RGB lighting and DIY desk builds. Software + display + buttons + audio + battery + case = a real thing I can hold or explore in a browser.</p>
           <ul class="chips">
-            <li>ESP32-S3</li><li>Raspberry Pi</li><li>I²S</li><li>Power systems</li>
+            <li>Three.js</li><li>WLED / DDP</li><li>Procedural 3D</li><li>PC modding</li>
           </ul>
         </article>
       </div>
@@ -185,201 +219,439 @@
       <div class="section-head">
         <p class="eyebrow reveal">03 — Selected work</p>
         <h2 class="display reveal">Projects that actually exist.</h2>
-        <p class="sub reveal">Not notebook ideas. Devices, software, and systems I wired, coded and debugged.</p>
+        <p class="sub reveal">Live sites, wired devices, school systems and honest experiments. Filter by what interests you, then open a card for the full story.</p>
       </div>
 
-      <article class="project reveal">
-        <div class="project-index">01</div>
-        <div class="project-body">
-          <p class="project-kicker">Embedded · Gaming</p>
-          <h3>ESP32 NES Game Console</h3>
-          <p>A compact handheld built around an ESP32: ILI9341 TFT, physical buttons, NES emulator firmware, audio hardware, SD-card experiments, TP4056 charging, voltage booster and custom wiring. Not “install an emulator” — a complete DIY embedded gaming device. Hardware, mapping, power, audio, firmware and the long troubleshooting trail in between.</p>
-          <ul class="chips">
-            <li>ESP32</li><li>ILI9341</li><li>Emulator</li><li>TP4056</li><li>Audio</li>
-          </ul>
-        </div>
-        <div class="project-visual v-nes">
-          <div class="device">
-            <div class="device-screen">
-              <span class="pixel-grid"></span>
-              <strong>NES</strong>
-              <small>HANDHELD</small>
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+        <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>12</span></button>
+        <button class="filter" type="button" data-filter="embedded" aria-pressed="false">ESP32 &amp; Embedded <span>4</span></button>
+        <button class="filter" type="button" data-filter="web" aria-pressed="false">Web &amp; EdTech <span>3</span></button>
+        <button class="filter" type="button" data-filter="sim" aria-pressed="false">3D &amp; Simulations <span>1</span></button>
+        <button class="filter" type="button" data-filter="rgb" aria-pressed="false">PC &amp; RGB <span>2</span></button>
+        <button class="filter" type="button" data-filter="early" aria-pressed="false">Early builds <span>2</span></button>
+      </div>
+      <p class="filter-status" id="filterStatus" role="status" aria-live="polite">Showing all 12 projects</p>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card featured reveal" data-category="sim" data-project="jln">
+          <div class="project-visual v-jln">
+            <img src="images/jln-01.webp" loading="lazy" decoding="async" width="1280" height="800" alt="Screenshot of the JLN Stadium Kochi 3D drone simulation showing the stadium bowl, match HUD and Kaloor surroundings">
+            <span class="visual-tag">Live · Three.js</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Interactive 3D · Simulation</p>
+              <span class="status status-live">Live</span>
             </div>
-            <div class="device-btns"><i></i><i></i><i></i><i></i></div>
+            <h3>JLN Stadium, Kochi — 3D</h3>
+            <p class="project-summary">A browser-native drone simulation of the real Kaloor stadium: OSM-traced surroundings, a two-tier bowl, a running 11-a-side match and the Manjappada yellow wall.</p>
+            <ul class="chips"><li>three.js</li><li>OpenStreetMap</li><li>Procedural</li></ul>
+            <div class="card-foot">
+              <a class="card-live" href="https://asif4517-git.github.io/JLN-STADIUM-KOCHI-3D-/" target="_blank" rel="noopener noreferrer" aria-label="Open the JLN Stadium 3D live simulation in a new tab">
+                <span class="card-live-label"><small>Live · opens in a new tab</small>Open live simulation</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <div class="card-links"><a href="https://github.com/Asif4517-git/JLN-STADIUM-KOCHI-3D-" target="_blank" rel="noopener noreferrer">View source ↗</a></div>
+              <button class="card-open" type="button" data-open="jln">Full case study <span aria-hidden="true">↗</span></button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project rev reveal">
-        <div class="project-index">02</div>
-        <div class="project-body">
-          <p class="project-kicker">Audio · Networking</p>
-          <h3>ESP32 Internet Radio</h3>
-          <p>Streaming internet radio on ESP32 — stream URLs, I²S playback, speaker and amplifier hardware. Real-world problems included dying stream URLs, DNS issues, audio quality and hardware interference. That’s where the learning actually happened.</p>
-          <ul class="chips">
-            <li>I²S</li><li>Streaming</li><li>Wi-Fi</li><li>Amplifiers</li>
-          </ul>
-        </div>
-        <div class="project-visual v-radio">
-          <div class="eq" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <article class="project-card featured reveal" data-category="web" data-project="chemlab">
+          <div class="project-visual v-chem">
+            <img src="images/previews/chemlab-home.webp" loading="lazy" decoding="async" width="1400" height="875" alt="Screenshot of the ChemLab Kerala home page with its dark teal dashboard and six learning modules">
+            <span class="visual-tag">Live · EdTech</span>
           </div>
-          <p class="visual-label">LIVE STREAM</p>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-index">03</div>
-        <div class="project-body">
-          <p class="project-kicker">Web · School tech</p>
-          <h3>School Information System</h3>
-          <p>A full-screen information dashboard for school use: branding, live clock and date, slideshow playlist, scrolling ticker, Malayalam Unicode, and a modern dark gold-themed interface served locally. Web development, UI and practical school technology in one surface.</p>
-          <ul class="chips">
-            <li>Dashboard</li><li>Malayalam</li><li>Local hosting</li><li>UI</li>
-          </ul>
-        </div>
-        <div class="project-visual v-dash">
-          <div class="mini-dash">
-            <div class="md-top"><span></span><span></span></div>
-            <div class="md-clock">14:32</div>
-            <div class="md-ticker"></div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Web · Education</p>
+              <span class="status status-live">Live</span>
+            </div>
+            <h3>ChemLab Kerala</h3>
+            <p class="project-summary">A Class 10 chemistry learning site: 8 virtual experiments, 25 reactions, an interactive 118-element periodic table, 7 chapters, 90 quiz questions and revision mode.</p>
+            <ul class="chips"><li>React / Next.js</li><li>Simulations</li><li>Progress</li></ul>
+            <div class="card-foot">
+              <a class="card-live teal" href="https://chemlab-kerala.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the ChemLab Kerala live website in a new tab">
+                <span class="card-live-label"><small>Live · opens in a new tab</small>Open live site</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <button class="card-open" type="button" data-open="chemlab">Full case study <span aria-hidden="true">↗</span></button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project rev reveal">
-        <div class="project-index">04</div>
-        <div class="project-body">
-          <p class="project-kicker">Software · Real world</p>
-          <h3>Billing Software</h3>
-          <p>Experimental billing software — products, prices, calculations and transactions. I like systems that could actually be used, not just demonstrated. It taught me how software sits inside everyday work.</p>
-          <ul class="chips">
-            <li>CRUD</li><li>Logic</li><li>UI</li>
-          </ul>
-        </div>
-        <div class="project-visual v-bill">
-          <div class="bill-sheet">
-            <span></span><span></span><span class="wide"></span>
-            <span></span><span></span><span class="wide accent"></span>
+        <article class="project-card reveal" data-category="embedded" data-project="nes">
+          <div class="project-visual v-nes">
+            <div class="device">
+              <div class="device-screen">
+                <span class="pixel-grid"></span>
+                <strong>NES</strong>
+                <small>HANDHELD</small>
+              </div>
+              <div class="device-btns"><i></i><i></i><i></i><i></i></div>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-index">05</div>
-        <div class="project-body">
-          <p class="project-kicker">Networking · Embedded</p>
-          <h3>ESP32 Wi-Fi Lab</h3>
-          <p>Hands-on networking on ESP32 — wireless hardware, firmware, embedded interfaces and how small devices talk on a network. The point was understanding capability: what a tiny board can do when software and radios meet.</p>
-          <ul class="chips">
-            <li>Wi-Fi</li><li>Bluetooth</li><li>Firmware</li>
-          </ul>
-        </div>
-        <div class="project-visual v-wifi">
-          <div class="radar"><i></i><i></i><i></i></div>
-        </div>
-      </article>
-
-      <article class="project rev reveal">
-        <div class="project-index">06</div>
-        <div class="project-body">
-          <p class="project-kicker">Origin · Kid builder</p>
-          <h3>RC cars, mods &amp; first machines</h3>
-          <p>Before ESP32 and websites, I was a kid in Thazhava tearing into remote-control cars — modifying chassis, motors, bodies, and building my own RC cars, buses and trucks. Small projects. Lots of broken plastic. That’s where the “can I build it?” habit started. Hardware first, always.</p>
-          <ul class="chips">
-            <li>RC cars</li><li>Mods</li><li>DIY vehicles</li><li>Mechanics</li>
-          </ul>
-        </div>
-        <div class="project-visual v-rc">
-          <div class="rc-car" aria-hidden="true">
-            <span class="rc-body"></span>
-            <span class="rc-wheel a"></span>
-            <span class="rc-wheel b"></span>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Embedded · Gaming</p>
+              <span class="status status-built">Prototype</span>
+            </div>
+            <h3>ESP32 Handheld Console</h3>
+            <p class="project-summary">A DIY retro handheld: ILI9341 TFT, physical buttons, SD card, I²S audio amp and NES emulator firmware on an ESP32 DevKit.</p>
+            <ul class="chips"><li>ESP32</li><li>ILI9341</li><li>MAX98357A</li></ul>
+            <button class="card-open" type="button" data-open="nes">Full case study <span aria-hidden="true">↗</span></button>
           </div>
-          <p class="visual-label">KID LAB</p>
-        </div>
-      </article>
+        </article>
+
+        <article class="project-card reveal" data-category="rgb" data-project="wled">
+          <div class="project-visual v-rgb">
+            <div class="rgb-strip" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="rgb-label">DDP · WLED</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Hardware · RGB</p>
+              <span class="status status-ongoing">Ongoing</span>
+            </div>
+            <h3>ESP32 + WLED Smart Lighting</h3>
+            <p class="project-summary">An ESP32 running WLED, controlled from a Python desktop app: DDP pixel output, screen-dominant colours, audio-reactive effects and system-metric experiments.</p>
+            <ul class="chips"><li>WLED</li><li>Python</li><li>DDP</li></ul>
+            <div class="card-links"><a href="https://github.com/Asif4517-git/Esp-32-led-controller" target="_blank" rel="noopener noreferrer">View source ↗</a></div>
+            <button class="card-open" type="button" data-open="wled">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web" data-project="schooltv">
+          <div class="project-visual v-dash">
+            <div class="mini-dash">
+              <div class="md-top"><span></span><span></span></div>
+              <div class="md-clock">14:32</div>
+              <div class="md-ticker"></div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Web · School tech</p>
+              <span class="status status-built">Built</span>
+            </div>
+            <h3>School Information TV Display</h3>
+            <p class="project-summary">A gold-and-dark full-screen Vite display for school: branding, live clock, slideshow playlist, scrolling ticker and Malayalam Unicode text.</p>
+            <ul class="chips"><li>Vite</li><li>Malayalam</li><li>UI</li></ul>
+            <button class="card-open" type="button" data-open="schooltv">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="embedded" data-project="sensor">
+          <div class="project-visual v-sensor">
+            <div class="sensor-panel" aria-hidden="true">
+              <div class="sp-head"><i></i><i></i><i></i></div>
+              <div class="sp-bars"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+              <span class="sp-read">MQ-135 · ADC</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Embedded · Sensors</p>
+              <span class="status status-built">School project</span>
+            </div>
+            <h3>School Multi-Sensor Dashboard</h3>
+            <p class="project-summary">Reworked an earlier automatic-gate prototype into a monitoring board: MQ-135 gas sensing, analog readings and an I²C LCD dashboard.</p>
+            <ul class="chips"><li>MQ-135</li><li>I²C LCD</li><li>Analog in</li></ul>
+            <button class="card-open" type="button" data-open="sensor">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="embedded" data-project="radio">
+          <div class="project-visual v-radio">
+            <div class="eq" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="visual-label">LIVE STREAM</p>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Audio · Networking</p>
+              <span class="status status-built">Built</span>
+            </div>
+            <h3>ESP32 Internet Radio</h3>
+            <p class="project-summary">Streaming internet radio on ESP32 with I²S playback and an amplifier. Dying stream URLs, DNS failures and speaker noise were the real teachers.</p>
+            <ul class="chips"><li>I²S</li><li>Wi-Fi</li><li>Streaming</li></ul>
+            <button class="card-open" type="button" data-open="radio">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="embedded" data-project="marauder">
+          <div class="project-visual v-wifi">
+            <div class="radar"><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Wireless · Learning</p>
+              <span class="status status-experiment">Experiment</span>
+            </div>
+            <h3>ESP32 Wi-Fi Marauder Exploration</h3>
+            <p class="project-summary">An authorised, educational look at Wi-Fi networking with ESP32 firmware — how a tiny radio-equipped board sees the networks around it.</p>
+            <ul class="chips"><li>Firmware</li><li>Wi-Fi</li><li>Ethical lab</li></ul>
+            <button class="card-open" type="button" data-open="marauder">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web" data-project="airchat">
+          <div class="project-visual v-chat">
+            <div class="chat-bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Android · Kotlin</p>
+              <span class="status status-experiment">Experiment</span>
+            </div>
+            <h3>AirChat — Android Chat Experiment</h3>
+            <p class="project-summary">A native Kotlin messaging app experiment with a socket layer, call screens, push notifications and a local API client. A way to learn mobile architecture by building it.</p>
+            <ul class="chips"><li>Kotlin</li><li>Android</li><li>Sockets</li></ul>
+            <div class="card-links"><a href="https://github.com/Asif4517-git/whatslite" target="_blank" rel="noopener noreferrer">View source ↗</a></div>
+            <button class="card-open" type="button" data-open="airchat">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="rgb" data-project="pcsetup">
+          <div class="project-visual v-pc">
+            <img src="images/pc-setup.webp" loading="lazy" decoding="async" width="1448" height="1086" alt="My real desk setup: a black PC tower and monitor with blue, pink and green ambient RGB lighting, Batman and ROG-style foam wall art and a Spider-Man emblem">
+            <span class="visual-tag">Real photo</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">DIY · Workspace</p>
+              <span class="status status-built">Personal build</span>
+            </div>
+            <h3>Custom RGB PC &amp; Desk</h3>
+            <p class="project-summary">A compact black desk setup with ESP32/WLED ambient lighting, DIY foam wall art and a ROG-inspired badge. A creative hardware project, not a product.</p>
+            <ul class="chips"><li>WLED</li><li>Foam art</li><li>RGB</li></ul>
+            <button class="card-open" type="button" data-open="pcsetup">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="early" data-project="billing">
+          <div class="project-visual v-bill">
+            <div class="bill-sheet">
+              <span></span><span></span><span class="wide"></span>
+              <span></span><span></span><span class="wide accent"></span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Software · Early experiment</p>
+              <span class="status status-experiment">Experiment</span>
+            </div>
+            <h3>Billing Software Experiment</h3>
+            <p class="project-summary">An early exploration of products, prices, calculations and transactions — the kind of software that could actually be used in a shop.</p>
+            <ul class="chips"><li>CRUD</li><li>Logic</li><li>UI</li></ul>
+            <button class="card-open" type="button" data-open="billing">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="early" data-project="rc">
+          <div class="project-visual v-rc">
+            <div class="rc-car" aria-hidden="true">
+              <span class="rc-body"></span>
+              <span class="rc-wheel a"></span>
+              <span class="rc-wheel b"></span>
+            </div>
+            <p class="visual-label">KID LAB</p>
+          </div>
+          <div class="project-card-body">
+            <div class="project-topline">
+              <p class="project-kicker">Origin · Kid builder</p>
+              <span class="status status-built">Where it started</span>
+            </div>
+            <h3>RC Cars, Mods &amp; First Machines</h3>
+            <p class="project-summary">Before ESP32 and websites, I was taking remote-control cars apart — modifying chassis, motors and bodies, and building my own cars, buses and trucks.</p>
+            <ul class="chips"><li>RC cars</li><li>Mechanics</li><li>DIY</li></ul>
+            <button class="card-open" type="button" data-open="rc">Full case study <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="lab" id="lab">
+      <div class="section-head">
+        <p class="eyebrow reveal">04 — Hardware lab</p>
+        <h2 class="display reveal">Things I’ve tested, wired and broken.</h2>
+        <p class="sub reveal">Small experiments, not full products. This is where most of the learning happens — one component at a time.</p>
+      </div>
+      <div class="lab-grid">
+        <article class="lab-card reveal"><span class="lab-num">01</span><h3>Displays &amp; pixels</h3><p>ILI9341 TFT panels and I²C character LCDs — getting pixels and text to appear is its own kind of debugging.</p><span class="lab-tag">Tested</span></article>
+        <article class="lab-card reveal"><span class="lab-num">02</span><h3>Inputs &amp; storage</h3><p>Physical game buttons, SD-card interfaces and pin mapping. Small wires, big consequences.</p><span class="lab-tag">Tested</span></article>
+        <article class="lab-card reveal"><span class="lab-num">03</span><h3>Audio chains</h3><p>MAX98357A I²S amplifiers, speakers and the hunt for noisy ground loops.</p><span class="lab-tag">Tested</span></article>
+        <article class="lab-card reveal"><span class="lab-num">04</span><h3>Sensors</h3><p>MQ-135 gas sensing and analog reads, shown on a small LCD dashboard. Readings are exploratory, not calibrated.</p><span class="lab-tag">Experiment</span></article>
+        <article class="lab-card reveal"><span class="lab-num">05</span><h3>Power systems</h3><p>Rechargeable batteries, charging modules and boost converters for portable builds.</p><span class="lab-tag">Experiment</span></article>
+        <article class="lab-card reveal"><span class="lab-num">06</span><h3>Lighting &amp; radios</h3><p>Addressable LED strips, WLED effects, DDP input and ESP32 Wi-Fi firmware experiments in my own lab.</p><span class="lab-tag">Ongoing</span></article>
+      </div>
+      <p class="lab-note reveal">Everything wireless here is tested on my own equipment in authorised lab settings. No claims about other people’s networks.</p>
     </section>
 
     <section class="rig" id="rig">
       <div class="section-head">
-        <p class="eyebrow reveal">04 — The rig</p>
-        <h2 class="display reveal">PC enthusiast. I love GPUs and the box they live in.</h2>
-        <p class="sub reveal">Not a flex build — a real daily machine I actually use to code, learn, experiment and game.</p>
+        <p class="eyebrow reveal">05 — The rig</p>
+        <h2 class="display reveal">A real desk, not a render.</h2>
+        <p class="sub reveal">The everyday machine I use to code, learn, experiment and game — with lighting I built around it.</p>
       </div>
+
+      <div class="rig-feature reveal">
+        <figure class="rig-photo">
+          <img src="images/pc-setup.webp" loading="lazy" decoding="async" width="1448" height="1086" alt="My PC desk at night: black tower with orange internals, monitor, RGB ambient wash on the wall, Batman and ROG-inspired foam wall art, Spider-Man emblem and red LED strip under the desk">
+          <span class="rig-annotation a1">DIY foam art</span>
+          <span class="rig-annotation a2">WLED ambient wash</span>
+          <span class="rig-annotation a3">ESP32-controlled RGB</span>
+          <figcaption>My actual setup · Kerala, India</figcaption>
+        </figure>
+        <div class="rig-story">
+          <h3>Built to feel like a workspace.</h3>
+          <p>A compact black desk, a black tower, a monitor and a lot of light. I hand-made foam wall art — a Batman-style emblem, an ROG-inspired badge and a Spider-Man symbol — and placed RGB lighting behind the screen, under the desk and around the tower.</p>
+          <p>The lighting is the interesting part: an ESP32 running WLED, ambient effects, screen-colour and audio-reactive experiments, and ideas about showing PC stats as light. Some of those are still works in progress.</p>
+          <ul class="rig-list">
+            <li>ESP32 + WLED ambient lighting</li>
+            <li>DIY foam wall decorations</li>
+            <li>Monitor, tower and under-desk light placement</li>
+            <li>Screen / music reactive effects — experimental</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="rig-grid">
-        <article class="spec reveal">
-          <span class="spec-k">OS</span>
-          <strong>Windows 11 Pro</strong>
-          <p>Daily driver. Dev, browsers, tools.</p>
+        <article class="spec reveal"><span class="spec-k">OS</span><strong>Windows 11 Pro</strong><p>Daily driver. Dev, browsers, tools.</p></article>
+        <article class="spec reveal"><span class="spec-k">GPU</span><strong>NVIDIA GT 710</strong><p>The card I have. I still love GPUs.</p></article>
+        <article class="spec reveal"><span class="spec-k">Memory</span><strong>16 GB DDR4</strong><p>Enough to keep tabs, IDEs and emulators alive.</p></article>
+        <article class="spec reveal"><span class="spec-k">Storage</span><strong>512 GB</strong><p>Projects, firmware, games, experiments.</p></article>
+      </div>
+    </section>
+
+    <section class="tools" id="tools">
+      <div class="section-head">
+        <p class="eyebrow reveal">06 — Development tools</p>
+        <h2 class="display reveal">How the work actually gets made.</h2>
+        <p class="sub reveal">AI-assisted editors and the usual terminals. I use these to explore unfamiliar code, debug faster and understand what I’m building.</p>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card tc-cursor reveal">
+          <div class="tool-top"><span class="tool-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M4 3l7.5 17 2.3-6.6 6.7-2.2z"/></svg></span><span class="tool-state">Using</span></div>
+          <h3>Cursor</h3>
+          <p>Agent mode, codebase exploration and multi-file edits when I’m working on a bigger web project.</p>
+          <ul class="chips"><li>Agent mode</li><li>Multi-file</li></ul>
         </article>
-        <article class="spec reveal">
-          <span class="spec-k">GPU</span>
-          <strong>NVIDIA GT 710</strong>
-          <p>The card I have. I still love GPUs.</p>
+        <article class="tool-card tc-anti reveal">
+          <div class="tool-top"><span class="tool-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="10" ry="4.6" transform="rotate(-28 12 12)"/><circle cx="20" cy="8" r="1.4" fill="currentColor" stroke="none"/></svg></span><span class="tool-state muted">Exploring</span></div>
+          <h3>Google Antigravity</h3>
+          <p>Testing agentic coding workflows and seeing how a different AI IDE handles the same project.</p>
+          <ul class="chips"><li>Agentic IDE</li><li>Workflows</li></ul>
         </article>
-        <article class="spec reveal">
-          <span class="spec-k">Memory</span>
-          <strong>16 GB DDR4</strong>
-          <p>Enough to keep tabs, IDEs and emulators alive.</p>
+        <article class="tool-card tc-vscode reveal">
+          <div class="tool-top"><span class="tool-mark">&lt;/&gt;</span><span class="tool-state">Using</span></div>
+          <h3>VS Code</h3>
+          <p>Everyday editing, extensions, terminals and project management for both web and firmware work.</p>
+          <ul class="chips"><li>Editor</li><li>Extensions</li></ul>
         </article>
-        <article class="spec reveal">
-          <span class="spec-k">Storage</span>
-          <strong>512 GB</strong>
-          <p>Projects, firmware, games, experiments.</p>
+        <article class="tool-card tc-arduino reveal">
+          <div class="tool-top"><span class="tool-mark tc-arduino-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg></span><span class="tool-state">Using</span></div>
+          <h3>Arduino IDE</h3>
+          <p>ESP32 sketches, C++ firmware, board configs and the serial monitor when hardware refuses to talk.</p>
+          <ul class="chips"><li>C++</li><li>ESP32</li><li>Serial</li></ul>
         </article>
+        <article class="tool-card tc-git reveal">
+          <div class="tool-top"><span class="tool-mark tc-git-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg></span><span class="tool-state">Using</span></div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control and public repos for my WLED controller, the stadium simulation and this portfolio.</p>
+          <ul class="chips"><li>Repos</li><li>Pages</li></ul>
+        </article>
+        <article class="tool-card tc-ai reveal">
+          <div class="tool-top"><span class="tool-mark"><span class="tool-mark-trio"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg></span></span><span class="tool-state muted">Exploring</span></div>
+          <h3>AI model APIs</h3>
+          <p>Comparing model variants, reasoning styles and coding performance across providers — then using the results in real builds.</p>
+          <ul class="chips"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Qwen</li><li>DeepSeek</li></ul>
+        </article>
+      </div>
+
+      <div class="ai-strip reveal">
+        <p class="ai-strip-label">AI models &amp; ecosystems I compare</p>
+        <ul class="ai-chips">
+          <li><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg> ChatGPT</li>
+          <li><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z"/></svg> Claude</li>
+          <li><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg> Gemini</li>
+          <li><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg> Google AI</li>
+          <li><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" ><path d="M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z"/></svg> Nemotron</li>
+          <li>Qwen</li>
+          <li>DeepSeek</li>
+          <li>Agent workflows</li>
+        </ul>
+        <p class="ai-strip-note">Compared on real coding work — Arduino C++, ESP32 firmware, debugging and multi-file web edits. Not benchmarks.</p>
       </div>
     </section>
 
     <section class="skills" id="skills">
       <div class="section-head">
-        <p class="eyebrow reveal">05 — Stack & interests</p>
+        <p class="eyebrow reveal">07 — Stack &amp; interests</p>
         <h2 class="display reveal">The workshop.</h2>
+        <p class="sub reveal">Split honestly between what I use, what I’m learning and what I’m only exploring.</p>
       </div>
       <div class="skill-cols">
         <div class="skill-col reveal">
+          <span class="skill-level">Actively using</span>
           <h3>Software</h3>
           <ul>
             <li>C++ / Arduino</li>
             <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>Full-stack web</li>
-            <li>Local web apps</li>
-            <li>UI / UX & dashboards</li>
-            <li>AI-assisted programming</li>
+            <li>HTML &amp; CSS</li>
+            <li>Dashboards &amp; UI</li>
+            <li>Python (WLED tools)</li>
+            <li>Git &amp; GitHub</li>
           </ul>
         </div>
         <div class="skill-col reveal">
+          <span class="skill-level">Building with</span>
           <h3>Hardware</h3>
           <ul>
             <li>ESP32 / ESP32-S3</li>
-            <li>Raspberry Pi</li>
-            <li>TFT displays</li>
-            <li>I²S audio & amps</li>
-            <li>SD cards & sensors</li>
-            <li>Batteries & charging</li>
-            <li>Boost converters</li>
+            <li>TFT &amp; I²C displays</li>
+            <li>I²S audio &amp; amps</li>
+            <li>SD cards &amp; buttons</li>
+            <li>MQ-135 &amp; analog sensors</li>
+            <li>Batteries &amp; boost converters</li>
           </ul>
         </div>
         <div class="skill-col reveal">
-          <h3>AI & networks</h3>
+          <span class="skill-level">Learning &amp; exploring</span>
+          <h3>AI &amp; graphics</h3>
           <ul>
-            <li>ChatGPT · Claude</li>
-            <li>Gemini · Kimi · DeepSeek</li>
-            <li>Coding assistants</li>
-            <li>Wi-Fi & Bluetooth</li>
-            <li>Internet radio</li>
-            <li>ESP32 networking</li>
-            <li>GPUs &amp; PC hardware</li>
-            <li>Experimental prototypes</li>
+            <li>Three.js &amp; procedural 3D</li>
+            <li>React / Next.js / Vite</li>
+            <li>AI coding agents</li>
+            <li>Model APIs &amp; reasoning</li>
+            <li>WLED / DDP / audio reactive</li>
+            <li>Wi-Fi &amp; firmware concepts</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <section class="beyond" id="beyond">
+      <div class="section-head">
+        <p class="eyebrow reveal">08 — Beyond the code</p>
+        <h2 class="display reveal">The other things that keep me curious.</h2>
+      </div>
+      <div class="beyond-grid">
+        <article class="interest reveal"><span>01</span><h3>Football</h3><p>Lionel Messi, Argentina and eFootball. Watching how a play develops is a lot like debugging a system.</p></article>
+        <article class="interest reveal"><span>02</span><h3>AI models</h3><p>Comparing ChatGPT, Claude, Gemini, Qwen, DeepSeek and Nemotron on real tasks, not just benchmarks.</p></article>
+        <article class="interest reveal"><span>03</span><h3>PC hardware</h3><p>GPUs, cases, cooling and RGB — the physical side of computing that you can actually hold.</p></article>
+        <article class="interest reveal"><span>04</span><h3>Making things</h3><p>Foam art, desk mods, RC vehicles and whatever unusual idea turns into a weekend experiment.</p></article>
+      </div>
+    </section>
+
     <section class="approach" id="approach">
       <div class="approach-inner">
-        <p class="eyebrow reveal">06 — How I work</p>
+        <p class="eyebrow reveal">09 — How I work</p>
         <h2 class="display reveal">Have an idea. Build a prototype. Break it. Debug it. Improve it. Repeat.</h2>
         <div class="process">
           <div class="step reveal"><span>01</span><h3>Idea</h3><p>Can I build it?</p></div>
@@ -395,14 +667,14 @@
 
     <section class="achieve" id="achieve">
       <div class="achieve-card reveal">
-        <p class="eyebrow">07 — Achievements</p>
+        <p class="eyebrow">10 — Achievements</p>
         <h2>School IT Quiz winner — twice.</h2>
         <p>Technology isn’t only projects. I like the concepts too — computers, software, hardware and the digital world. Winning the school IT quiz two times is a small trophy for a long curiosity.</p>
       </div>
       <div class="hobbies reveal">
         <h3>Also: hobbies that look a lot like work</h3>
         <ul>
-          <li>Electronics & circuits</li>
+          <li>Electronics &amp; circuits</li>
           <li>Programming experiments</li>
           <li>New AI models</li>
           <li>Gaming technology</li>
@@ -416,39 +688,54 @@
 
     <section class="future" id="future">
       <div class="section-head">
-        <p class="eyebrow reveal">08 — Next</p>
+        <p class="eyebrow reveal">11 — Where I want to go</p>
         <h2 class="display reveal">Not just someone who uses technology. Someone who <em>creates</em> it.</h2>
       </div>
-      <ul class="goals">
-        <li class="reveal">Advanced programming</li>
-        <li class="reveal">Full-stack systems</li>
-        <li class="reveal">Artificial intelligence</li>
-        <li class="reveal">Embedded & ESP32</li>
-        <li class="reveal">Electronics & robotics</li>
-        <li class="reveal">Computer engineering</li>
-        <li class="reveal">Cybersecurity</li>
-        <li class="reveal">Hardware design</li>
-        <li class="reveal">AI-powered apps</li>
-        <li class="reveal">PC hardware &amp; GPUs</li>
-      </ul>
+      <div class="future-grid">
+        <article class="future-story reveal">
+          <h3>Building toward AI.</h3>
+          <p>I’m in Class 10, so this is the beginning, not a résumé. Right now the plan is simple: keep learning programming properly, keep building hardware and software, and keep studying how AI systems actually work.</p>
+          <p>Long term, I’d love to study computer science or engineering at a strong institution — an IIT is a dream worth working toward — and eventually contribute to the kind of AI research and tools being built at places like Anthropic, OpenAI and Google. Those are ambitions and interests, not affiliations.</p>
+          <p class="future-line">Learn the fundamentals → build real things → understand the models → go deeper.</p>
+        </article>
+        <ul class="goals">
+          <li class="reveal">Advanced programming</li>
+          <li class="reveal">Full-stack systems</li>
+          <li class="reveal">Artificial intelligence</li>
+          <li class="reveal">Embedded &amp; ESP32</li>
+          <li class="reveal">Electronics &amp; robotics</li>
+          <li class="reveal">Computer engineering</li>
+          <li class="reveal">Cybersecurity</li>
+          <li class="reveal">Hardware design</li>
+          <li class="reveal">AI-powered apps</li>
+          <li class="reveal">PC hardware &amp; GPUs</li>
+        </ul>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-      <p class="eyebrow reveal">09 — Contact</p>
+      <p class="eyebrow reveal">12 — Contact</p>
       <h2 class="display reveal">Let’s build something.</h2>
-      <p class="contact-lead reveal">Projects, ideas, school tech, hardware, PCs — write to me or find me on GitHub.</p>
+      <p class="contact-lead reveal">Projects, ideas, school tech, hardware, PCs — write to me or find me online.</p>
       <div class="contact-links reveal">
         <a class="mail" href="mailto:asifsrk4517@gmail.com">asifsrk4517@gmail.com</a>
         <button class="copy-mail" type="button" id="copyMail" data-mail="asifsrk4517@gmail.com">Copy</button>
       </div>
       <div class="social-row reveal">
         <a class="social" href="mailto:asifsrk4517@gmail.com">
-          <span>Gmail</span>
+          <span class="social-ic social-mail">@</span>
+          <span class="social-label">Gmail</span>
           <strong>asifsrk4517@gmail.com</strong>
         </a>
         <a class="social" href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer">
-          <span>GitHub</span>
+          <span class="social-ic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.75.81 1.2 1.83 1.2 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.2 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></span>
+          <span class="social-label">GitHub</span>
           <strong>@Asif4517-git</strong>
+        </a>
+        <a class="social social-insta" href="https://www.instagram.com/asif_xrk/" target="_blank" rel="noopener noreferrer">
+          <span class="social-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+          <span class="social-label">Instagram</span>
+          <strong>@asif_xrk</strong>
         </a>
       </div>
       <p class="school reveal">Home · Kuttippuram, Thazhava, Karunagappally, Kollam</p>
@@ -457,24 +744,36 @@
   </main>
 
   <aside class="dock" aria-label="Quick links">
-    <a href="mailto:asifsrk4517@gmail.com" title="Gmail">@</a>
-    <a href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer" title="GitHub">
+    <a href="mailto:asifsrk4517@gmail.com" title="Gmail" aria-label="Gmail">@</a>
+    <a href="https://www.instagram.com/asif_xrk/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram @asif_xrk">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.75.81 1.2 1.83 1.2 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.2 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
     </a>
-    <a href="#top" title="Top">↑</a>
+    <a href="#top" title="Top" aria-label="Back to top">↑</a>
   </aside>
 
   <div class="toast" id="toast" role="status">Copied Gmail</div>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close project details">✕</button>
+      <div class="dialog-content" id="dialogContent"></div>
+    </div>
+  </dialog>
 
   <footer class="footer">
     <p>© 2026 Asif Shahrukh Khan</p>
     <div class="footer-links">
       <a href="mailto:asifsrk4517@gmail.com">Gmail</a>
+      <a href="https://www.instagram.com/asif_xrk/" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="https://github.com/Asif4517-git" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <p class="motto">Don’t just use technology. Build something with it.</p>
   </footer>
 
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
