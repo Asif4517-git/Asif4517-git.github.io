@@ -2,6 +2,40 @@
    Only claims backed by the live sites, public repos or the portfolio's
    original copy are included. Statuses are deliberately explicit. */
 window.PROJECT_DETAILS = {
+  neon: {
+    kicker: "Game development · Web development",
+    title: "Neon Rush",
+    status: "Live browser game",
+    statusType: "live",
+    summary: "A neon-lit 3D arcade racing game that runs in the browser. Choose a machine and a circuit, then race with steering, drifting and nitro controls.",
+    built: [
+      "A garage and circuit selection interface alongside the main menu, driving HUD and pause screen.",
+      "Procedural Three.js cars and circuits with neon lighting, a race countdown, lap tracking and a speed display.",
+      "Keyboard driving: W / arrow keys to accelerate, A / D to steer, Space for handbrake drift, Shift for nitro, C to change camera and Escape to pause.",
+      "Web Audio-based sound and touch controls for mobile devices."
+    ],
+    stack: ["React", "TypeScript", "Three.js", "Vite", "Web Audio API"],
+    learned: "Bringing rendering, driving controls, race state and a usable interface together into a playable browser project.",
+    note: "This is a real deployed game. The gallery combines actual live-browser captures with screenshots supplied in my PDF; no generated portfolio imagery is used. This is arcade driving, not a claim of physically calibrated vehicle simulation.",
+    shots: [
+      { src: "images/updates/neon-live-05-driving-boost.webp", cap: "Actual deployed game — acceleration and nitro via real keyboard input" },
+      { src: "images/updates/neon-live-06-driving-turn.webp", cap: "Actual deployed game — steering and handbrake input on the neon circuit" },
+      { src: "images/updates/neon-live-01-menu.webp", cap: "Actual deployed game — main menu" },
+      { src: "images/updates/neon-live-02-garage.webp", cap: "Actual deployed game — garage" },
+      { src: "images/updates/neon-live-03-circuits.webp", cap: "Actual deployed game — circuit selection" },
+      { src: "images/updates/neon-pdf-race.webp", cap: "Gameplay countdown — screenshot supplied in PDF, page 9" },
+      { src: "images/updates/neon-pdf-garage.webp", cap: "Garage — screenshot supplied in PDF, page 10" },
+      { src: "images/updates/neon-pdf-circuits.webp", cap: "Circuits — screenshot supplied in PDF, page 11" },
+      { src: "images/updates/neon-pdf-menu.webp", cap: "Menu — screenshot supplied in PDF, page 12" },
+      { src: "images/updates/neon-pdf-controls.webp", cap: "Controls — screenshot supplied in PDF, page 13" },
+      { src: "images/updates/neon-pdf-results.webp", cap: "Results screen — screenshot supplied in PDF, page 8 (not a portfolio achievement)" }
+    ],
+    links: [
+      { label: "PLAY LIVE", href: "https://asif4517-git.github.io/neon-rush/", primary: true },
+      { label: "VIEW SOURCE", href: "https://github.com/Asif4517-git/neon-rush" }
+    ]
+  },
+
   jln: {
     kicker: "Interactive 3D · Simulation",
     title: "JLN Stadium, Kochi — 3D Drone Simulation",
@@ -74,7 +108,7 @@ window.PROJECT_DETAILS = {
     stack: ["ESP32 DevKit", "Arduino C++", "ILI9341 TFT", "MAX98357A I²S", "SD card", "TP4056 + boost"],
     learned: "Display drivers, button input, SD access, I²S audio and power delivery all have to agree before a game boots. Most of the work was integration and debugging, not writing game logic.",
     note: "This is a prototype. I don't publish battery runtime, emulator compatibility lists or benchmarks because I haven't measured them properly.",
-    shots: [],
+    shots: [{ src: "images/updates/nes-build.webp", cap: "My actual handheld prototype: TFT, buttons and hand-wired perfboard — PDF page 1" }],
     links: []
   },
 
@@ -95,7 +129,7 @@ window.PROJECT_DETAILS = {
     learned: "Ambient lighting is a software problem too: colour extraction, frame rate, network protocols and effect design all decide whether the result feels alive or laggy.",
     note: "The mode list comes from the project's own README. Some behaviour still depends on the exact hardware and setup, so I treat the PC-stat and audio features as ongoing experiments rather than a finished product.",
     shots: [
-      { src: "images/pc-setup.webp", cap: "The real desk this lighting was built for" }
+      { src: "images/updates/desk-purple.webp", cap: "The real desk this lighting was built for" }
     ],
     links: [
       { label: "View the controller source", href: "https://github.com/Asif4517-git/Esp-32-led-controller", primary: true }
@@ -210,7 +244,11 @@ window.PROJECT_DETAILS = {
     learned: "A workspace is a design project. Placement, diffusion and restraint matter more than simply adding more LEDs.",
     note: "The photo above is my actual setup. The screen, music and hardware-stat driven lighting features are experiments rather than finished, always-on features.",
     shots: [
-      { src: "images/pc-setup.webp", cap: "My desk at night with the ambient lighting on" }
+      { src: "images/updates/desk-purple.webp", cap: "My setup — purple ambient lighting" },
+      { src: "images/updates/desk-warm.webp", cap: "Warm RGB ambient lighting" },
+      { src: "images/updates/desk-wide.webp", cap: "Wide desk view" },
+      { src: "images/updates/desk-front.webp", cap: "Front view" },
+      { src: "images/updates/desk-blue.webp", cap: "Blue lighting and speakers" }
     ],
     links: []
   },
