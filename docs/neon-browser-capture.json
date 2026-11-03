@@ -14,11 +14,20 @@
       "text": "NEON\nRUSH\nGARAGE\nCIRCUITS\nSETTINGS\nABOUT\nHOW TO PLAY\nSOLO GRID\nRACE\n02 / 04\nWORLD TOUR / MIDNIGHT CALENDAR\nCHOOSE YOUR LINE\n\nThree very different ways to lose your licence. Sweeping elevated overpasses, technical dockyard switchbacks and a downtown street circuit built for the brave.\n\nMACHINE\n\nVANTA GT\n\nSECTOR 07 // DOWNTOWN\nMIRAGE / PRO\nSELECTED\n\nSECTOR 07 // DOWNTOWN\n\nNEON MIRAGE\n\nA high-speed street circuit carved between colossal towers. Long sweepers flow into a technical harbor chicane with barely a metre to spare.\n\nLENGTH\n\n1.12 KM\n\nLAPS\n\n03\n\nTURNS\n\n14\n\nGRIP LEVEL\nSTART THIS CIRCUIT\nELEVATED ARTERY // NORTH\nSKYWAY / STREET\n\nELEVATED ARTERY // NORTH\n\nMIDNIGHT SKYWAY\n\nElevated overpass racing with massive radius corners and a plunging elevation change. The fastest circuit in the NEON RUSH calendar.\n\nLENGTH\n\n1.48 KM\n\nLAPS\n\n02\n\nTURNS\n\n09\n\nGRIP LEVEL\nSELECT CIRCUIT\nTERMINAL 09 // EAST\nDOCKS / EXPERT\n\nTERMINAL 09 // EAST\n\nCHROME DOCKS\n\nA narrow technical loop threaded through shipping terminals and holographic cranes. RWD heaven, curb-hopping hell. Your drift inputs matter here.\n\nLENGTH\n\n0.96 KM\n\nLAPS\n\n03\n\nTURNS\n\n17\n\nGRIP LEVEL\nSELECT CIRCUIT\n\nRACE SETUP LOCKED\n\nVANTA GT / NEON MIRAGE\n\n3 laps · 6-car grid · standing start · dry asphalt · automated traction control\n\nSTART ENGINE\n\nGRID\n\n06\n\nWEATHER\n\nCLEAR\n\nSURFACE\n\nDRY"
     },
     {
-      "screenshot": "08-last-state",
-      "text": "POSITION\n\n1/ 6\n\nLAP\n\n1 /3\n\nRACE\n\n00:11\n\nLAP TIME\n\n11.18\n\nBEST\n\n—.——\n\nSECTORS\n\nLIVE STANDINGS\nNEON MIRAGE\n1\nYOU\nL1\n2\nLUNA VOSS\nL1\n3\nKAI 'ZERO' MORROW\nL1\n4\nRHEA SAINT\nL1\n5\nDEX KOWALSKI\nL1\n6\nONYX\nL1\nLIVE · SECTOR 07 // DOWNTOWN\nCHASE\nNEON MIRAGE\nSPEED\nVANTA GT\n\n001\n\nKM/H\n\n1\n20 RPM×100\n1 TOP\n1/3\n00:11\nNITRO CELL\n100%\nSHIFT\nREADY\nSPACE\nDRIFT\nC\nCAM\nW\nA\nS\nD\nDRIVE\nESC\nPAUSE"
+      "action": "Race started, driving with real keyboard controls"
+    },
+    {
+      "screenshot": "05-driving-boost",
+      "text": "POSITION\n\n6/ 6\n\nLAP\n\n1 /3\n\nRACE\n\n00:06\n\nLAP TIME\n\n4.70\n\nBEST\n\n—.——\n\nSECTORS\n\nLIVE STANDINGS\nNEON MIRAGE\n1\nKAI 'ZERO' MORROW\nL1\n2\nDEX KOWALSKI\nL1\n3\nLUNA VOSS\nL1\n4\nRHEA SAINT\nL1\n5\nONYX\nL1\n6\nYOU\nL1\nLIVE · SECTOR 07 // DOWNTOWN\nCHASE\nNEON MIRAGE\nSPEED\nVANTA GT\n\n005\n\nKM/H\n\n1\n27 RPM×100\n178 TOP\n1/3\n00:04\nNITRO CELL\n58%\nSHIFT\nREADY\nSPACE\nDRIFT\nC\nCAM\nW\nA\nS\nD\nDRIVE\nESC\nPAUSE"
+    },
+    {
+      "screenshot": "06-driving-turn",
+      "text": "POSITION\n\n6/ 6\n\nLAP\n\n1 /3\n\nRACE\n\n00:13\n\nLAP TIME\n\n11.97\n\nBEST\n\n—.——\n\nSECTORS\n\nLIVE STANDINGS\nNEON MIRAGE\n1\nRHEA SAINT\nL1\n2\nLUNA VOSS\nL1\n3\nKAI 'ZERO' MORROW\nL1\n4\nDEX KOWALSKI\nL1\n5\nONYX\nL1\n6\nYOU\nL1\nLIVE · SECTOR 07 // DOWNTOWN\nCHASE\nNEON MIRAGE\nSPEED\nVANTA GT\n\n000\n\nKM/H\n\n1\n18 RPM×100\n178 TOP\n1/3\n00:11\nNITRO CELL\n81%\nSHIFT\nREADY\nSPACE\nDRIFT\nC\nCAM\nW\nA\nS\nD\nDRIVE\nESC\nPAUSE"
+    },
+    {
+      "screenshot": "07-pause",
+      "text": "POSITION\n\n6/ 6\n\nLAP\n\n1 /3\n\nRACE\n\n00:13\n\nLAP TIME\n\n12.03\n\nBEST\n\n—.——\n\nSECTORS\n\nLIVE STANDINGS\nNEON MIRAGE\n1\nRHEA SAINT\nL1\n2\nLUNA VOSS\nL1\n3\nKAI 'ZERO' MORROW\nL1\n4\nDEX KOWALSKI\nL1\n5\nONYX\nL1\n6\nYOU\nL1\nLIVE · SECTOR 07 // DOWNTOWN\nCHASE\nNEON MIRAGE\nSPEED\nVANTA GT\n\n000\n\nKM/H\n\n1\n18 RPM×100\n178 TOP\n1/3\n00:12\nNITRO CELL\n81%\nSHIFT\nREADY\nSPACE\nDRIFT\nC\nCAM\nW\nA\nS\nD\nDRIVE\nESC\nPAUSE\n\nRACE PAUSED\n\nNEON MIRAGE · 00:13.516\n\nRESUME RACE\nRESTART\nOPTIONS\n\nEsc resume · R recover to track · C camera\n\nABANDON SESSION\n3 LAPS · PRO\nGRID LOCKED · VANTA GT"
     }
   ],
-  "errors": [
-    "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
-  ]
+  "errors": []
 }
