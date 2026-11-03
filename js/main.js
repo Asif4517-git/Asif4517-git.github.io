@@ -49,7 +49,7 @@
   const staggerGroups = [
     ".bento", ".project-grid", ".lab-grid", ".tools-grid", ".beyond-grid",
     ".rig-grid", ".skill-cols", ".process", ".goals", ".stats", ".stats",
-    ".filter-bar", ".social-row"
+    ".filter-bar", ".social-row", ".recognition-grid"
   ];
   staggerGroups.forEach((sel) => {
     const group = $(sel);
@@ -282,7 +282,7 @@
   const filterButtons = $$(".filter");
   const filterStatus = $("#filterStatus");
   const FILTER_NAMES = {
-    all: "all", embedded: "ESP32 & Embedded", web: "Web & EdTech",
+    all: "all", embedded: "ESP32 & Embedded", web: "Web & Games",
     sim: "3D & Simulations", rgb: "PC & RGB", early: "Early builds"
   };
   let filtering = false;
@@ -345,8 +345,8 @@
 
   function buildDetail(d) {
     const shots = d.shots?.length
-      ? `<h3>Screenshots</h3><div class="dgallery">${d.shots.map((s) =>
-          `<figure><img src="${esc(s.src)}" alt="${esc(s.cap)}" loading="lazy" decoding="async" /><figcaption>${esc(s.cap)}</figcaption></figure>`
+      ? `<h3>Project gallery</h3><div class="dgallery">${d.shots.map((s) =>
+          `<figure><button class="photo-open" type="button" data-photo="${esc(s.src)}" aria-label="Enlarge: ${esc(s.cap)}"><img src="${esc(s.src)}" alt="${esc(s.cap)}" loading="lazy" decoding="async" /><span aria-hidden="true">View full size ↗</span></button><figcaption>${esc(s.cap)}</figcaption></figure>`
         ).join("")}</div>`
       : "";
     const links = d.links?.length

@@ -1988,3 +1988,68 @@ body:has(dialog[open]) a { cursor: pointer; }
   .card-live { padding: 13px 15px; font-size: 14px; }
   .card-live-label small { font-size: 9px; }
 }
+
+/* November content update — same palette, type, cards and easing. */
+.recognition { display: block; }
+.recognition-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.recognition-card { position: relative; overflow: hidden; padding: 30px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); transition: border-color .35s var(--ease), transform .35s var(--ease); }
+.recognition-card:hover { border-color: rgba(255,179,71,.4); transform: translateY(-4px); }
+.recognition-card h3 { font: 700 21px/1.3 "Syne", sans-serif; letter-spacing: -.03em; margin: 12px 0; }
+.recognition-card p:not(.project-kicker) { color: var(--muted); font-size: 15px; }
+.award-result { display: block; margin: 20px 0 0; color: var(--accent-2); font: 700 clamp(42px,5vw,68px)/1 "Syne",sans-serif; letter-spacing: -.05em; }
+.award-result span { font-size: .48em; letter-spacing: -.02em; color: var(--text); }
+.award-mark { position: absolute; right: 24px; top: 20px; color: var(--accent-2); opacity: .55; font-size: 30px; }
+.district-highlight { grid-row: span 2; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(ellipse at 100% 0%,rgba(255,107,26,.17),transparent 65%),linear-gradient(150deg,#21170e,#121216); border-color: rgba(255,179,71,.3); }
+.district-highlight .award-result { font-size: clamp(64px,7vw,100px); margin-top: 34px; }
+.award-note { color: var(--accent-2); border-top: 1px solid rgba(255,179,71,.2); padding-top: 24px; margin-top: 28px; font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
+.kites-card h3 { margin-top: 30px; }
+.kites-card .rig-list { margin: 18px 0; }
+.project-visual.real-build { background: #141416; }
+.project-visual.real-build img { object-fit: contain; object-position: center; }
+.project-card:hover .real-build img { transform: scale(1.025); }
+.neon-shot img { object-fit: contain; object-position: center; background: #080810; }
+.desk-gallery { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 14px; margin: 28px 0 40px; }
+.desk-gallery figure { min-width: 0; margin: 0; }
+.desk-gallery figcaption { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.photo-open { position: relative; display: block; width: 100%; overflow: hidden; border-radius: 16px; background: #0d0d10; border: 1px solid var(--line); }
+.photo-open img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .65s var(--ease); }
+.photo-open:hover img { transform: scale(1.035); }
+.photo-open span { position: absolute; bottom: 10px; right: 10px; font-size: 11px; background: rgba(7,7,8,.8); padding: 5px 8px; border-radius: 6px; color: var(--text); }
+.photo-open:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 4px; }
+.football-card { grid-column: span 2; display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: center; }
+.football-card .jersey-caption { margin-top: 20px; color: var(--accent-2); }
+.jersey-photo img { aspect-ratio: 1024/1473; object-fit: contain; }
+.image-dialog { position: fixed; inset: 0; margin: auto; width: min(1200px,96vw); max-height: 94dvh; padding: 20px; border: 1px solid var(--line); border-radius: 20px; color: var(--text); background: #0d0d10; overflow: auto; }
+.image-dialog::backdrop { background: rgba(0,0,0,.88); backdrop-filter: blur(8px); }
+.image-dialog figure { margin: 16px 0 0; }
+.image-dialog img { width: 100%; max-height: 74dvh; object-fit: contain; }
+.image-dialog figcaption { padding-top: 12px; color: var(--muted); font-size: 14px; }
+.image-close { display: flex; margin-left: auto; }
+.image-dialog[open] { animation: photo-appear .22s var(--ease); }
+@keyframes photo-appear { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (max-width: 1000px) {
+  .recognition-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .district-highlight { grid-row: auto; grid-column: span 2; }
+  .desk-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 600px) {
+  .recognition-grid { grid-template-columns: 1fr; gap: 14px; }
+  .district-highlight { grid-column: auto; }
+  .recognition-card { padding: 26px; }
+  .desk-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .football-card { grid-column: auto; grid-template-columns: 1fr; }
+  .jersey-photo { max-width: 240px; margin: 0 auto; }
+  .image-dialog { padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recognition-card, .photo-open img { transition: none; }
+  .recognition-card:hover, .photo-open:hover img { transform: none; }
+  .image-dialog[open] { animation: none; }
+}
+/* Preserve entire hardware photos inside the existing case-study filmstrip. */
+.dgallery .photo-open img { object-fit: contain; aspect-ratio: auto; }
+.photo-open img { height: auto; }
+.football-card > div > span { font: 700 12px/1 "Syne",sans-serif; color: var(--accent); letter-spacing: .12em; }
+@media (min-width: 701px) {
+  .hero-title { font-size: clamp(52px,6.1vw,94px); }
+}

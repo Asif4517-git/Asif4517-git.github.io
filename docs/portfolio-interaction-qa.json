@@ -1,0 +1,33 @@
+{
+  "filters": {
+    "embedded": 4,
+    "web": 4,
+    "sim": 1,
+    "rgb": 2,
+    "early": 2,
+    "all": 13
+  },
+  "links": [
+    {
+      "label": "PLAY LIVE",
+      "href": "https://asif4517-git.github.io/neon-rush/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "createdNewTab": true
+    },
+    {
+      "label": "VIEW SOURCE",
+      "href": "https://github.com/Asif4517-git/neon-rush",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "createdNewTab": true
+    }
+  ],
+  "neonGallery": 11,
+  "cursorInFullsize": "auto",
+  "returnedToGallery": true,
+  "returnedToNeonButton": true,
+  "mobileMenuOpen": "true",
+  "mobileMenuClosed": "false",
+  "mobilePhotoHeight": 342
+}

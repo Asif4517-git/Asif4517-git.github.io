@@ -1,0 +1,44 @@
+[
+  {
+    "width": 1440,
+    "reduced": false,
+    "overflow": 0,
+    "portrait": 0,
+    "cards": 13,
+    "scene": "workspace ready",
+    "web": 4,
+    "nesShots": 1,
+    "fullSizeOpen": true,
+    "parentStillOpen": true,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "reduced": false,
+    "overflow": 0,
+    "portrait": 0,
+    "cards": 13,
+    "scene": "workspace ready",
+    "web": 4,
+    "nesShots": 1,
+    "fullSizeOpen": true,
+    "parentStillOpen": true,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "width": 834,
+    "reduced": true,
+    "overflow": 0,
+    "portrait": 0,
+    "cards": 13,
+    "scene": "workspace",
+    "web": 4,
+    "nesShots": 1,
+    "fullSizeOpen": true,
+    "parentStillOpen": true,
+    "badImages": [],
+    "errors": []
+  }
+]

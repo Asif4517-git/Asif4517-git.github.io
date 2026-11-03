@@ -1,0 +1,21 @@
+// Static production site: no bundler required. Run: node scripts/check-site.mjs
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const html=fs.readFileSync('index.html','utf8');
+for(const f of ['js/main.js','js/data.js','js/media.js']) execFileSync(process.execPath,['--check',f]);
+for(const file of ['index.html','js/data.js','js/main.js','js/media.js','css/styles.css']) {
+ const text=fs.readFileSync(file,'utf8');
+ assert(!text.includes('images/pc-setup.webp'),`Old setup reference: ${file}`);
+ for(const [,asset] of text.matchAll(/(?:src|href)=["']((?:images|fonts|css|js)\/[^"']+)["']/g)) assert(fs.existsSync(asset),`Missing asset: ${asset}`);
+ for(const [,asset] of text.matchAll(/src:\s*"(images\/[^"']+)"/g)) assert(fs.existsSync(asset),`Missing case-study photo: ${asset}`);
+}
+assert.equal((html.match(/data-project=/g)||[]).length,13);
+assert(!html.includes('portrait-stage'));
+assert(!html.includes('images/asif.webp'));
+assert(html.includes('data-count="3"'));
+assert(html.indexOf('id="about"')<html.indexOf('id="achieve"'));
+assert(html.indexOf('id="achieve"')<html.indexOf('id="projects"'));
+for(const link of ['https://asif4517-git.github.io/neon-rush/','https://github.com/Asif4517-git/neon-rush']) assert(html.includes(`href="${link}" target="_blank" rel="noopener noreferrer"`));
+assert(html.includes('PLAY LIVE'));assert(html.includes('VIEW SOURCE'));
+console.log('PASS: JavaScript syntax, local media references, 13 cards, achievement order, portrait/setup removal, Neon Rush links.');
