@@ -1,5 +1,9 @@
 name: Capture live Neon Rush
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/5b0bcce7-asif4517-git-github-io]
+    paths: [scripts/capture-neon.mjs, .github/workflows/capture-neon.yml]
 permissions:
   contents: read
 jobs:
