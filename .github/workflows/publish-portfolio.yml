@@ -1,0 +1,21 @@
+name: Publish updated portfolio
+on:
+  push:
+    branches: [arena/5b0bcce7-asif4517-git-github-io]
+    paths: [.github/workflows/publish-portfolio.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Request build of the configured main-branch Pages site
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --method POST "repos/$GH_REPO/pages/builds"
+          gh api "repos/$GH_REPO/pages/builds/latest" --jq '{status,commit,error}'
