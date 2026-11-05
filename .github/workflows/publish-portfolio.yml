@@ -5,17 +5,46 @@ on:
     paths: [.github/workflows/publish-portfolio.yml]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
+  actions: read
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
-      - name: Request build of the configured main-branch Pages site
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Request a fresh build of the configured main-branch Pages site
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
           gh api --method POST "repos/$GH_REPO/pages/builds"
-          gh api "repos/$GH_REPO/pages/builds/latest" --jq '{status,commit,error}'
+          for attempt in $(seq 1 30); do
+            status=$(gh api "repos/$GH_REPO/pages/builds/latest" --jq .status)
+            echo "Pages build: $status"
+            if [ "$status" = built ]; then break; fi
+            if [ "$status" = errored ]; then exit 1; fi
+            sleep 10
+          done
+          test "$status" = built
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Open the deployed portfolio in Chromium and verify OverDrive
+        run: |
+          for attempt in 1 2 3; do
+            if node scripts/verify-overdrive-live.mjs; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 15
+          done
+      - name: Save public-site verification evidence
+        run: |
+          cp capture-output/overdrive-live-verification.json docs/overdrive-live-verification.json
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/overdrive-live-verification.json
+          git commit -m "Verify OverDrive on the live portfolio in desktop and mobile browsers"
+          git push origin HEAD:arena/5b0bcce7-asif4517-git-github-io
