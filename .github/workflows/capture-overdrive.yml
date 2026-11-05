@@ -1,0 +1,40 @@
+name: Explore live OverDrive and capture portfolio media
+on:
+  push:
+    branches: [arena/5b0bcce7-asif4517-git-github-io]
+    paths: [scripts/capture-overdrive.mjs, .github/workflows/capture-overdrive.yml]
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/capture-overdrive.mjs
+      - name: Save actual browser evidence on the working branch
+        if: always()
+        run: |
+          python -m pip install Pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          folder=Path('images/overdrive')
+          folder.mkdir(parents=True,exist_ok=True)
+          for p in Path('capture-output/overdrive').glob('*.png'):
+              if p.name.startswith(('error','portfolio')):
+                  continue
+              Image.open(p).convert('RGB').save(folder/(p.stem+'.webp'),quality=88,method=6)
+          PY
+          mkdir -p docs
+          cp capture-output/overdrive/report.json docs/overdrive-browser-capture.json
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add images/overdrive docs/overdrive-browser-capture.json
+          git commit -m "Capture actual live OverDrive screens and driving through a browser"
+          git push origin HEAD:arena/5b0bcce7-asif4517-git-github-io
