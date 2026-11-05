@@ -10,12 +10,12 @@ for(const file of ['index.html','js/data.js','js/main.js','js/media.js','css/sty
  for(const [,asset] of text.matchAll(/(?:src|href)=["']((?:images|fonts|css|js)\/[^"']+)["']/g)) assert(fs.existsSync(asset),`Missing asset: ${asset}`);
  for(const [,asset] of text.matchAll(/src:\s*"(images\/[^"']+)"/g)) assert(fs.existsSync(asset),`Missing case-study photo: ${asset}`);
 }
-assert.equal((html.match(/data-project=/g)||[]).length,13);
+assert.equal((html.match(/data-project=/g)||[]).length,14);
 assert(!html.includes('portrait-stage'));
 assert(!html.includes('images/asif.webp'));
 assert(html.includes('data-count="3"'));
 assert(html.indexOf('id="about"')<html.indexOf('id="achieve"'));
 assert(html.indexOf('id="achieve"')<html.indexOf('id="projects"'));
-for(const link of ['https://asif4517-git.github.io/neon-rush/','https://github.com/Asif4517-git/neon-rush']) assert(html.includes(`href="${link}" target="_blank" rel="noopener noreferrer"`));
+for(const link of ['https://asif4517-git.github.io/neon-rush/','https://github.com/Asif4517-git/neon-rush','https://asif4517-git.github.io/overdrive/','https://github.com/Asif4517-git/overdrive']) assert(html.includes(`href="${link}" target="_blank" rel="noopener noreferrer"`));
 assert(html.includes('PLAY LIVE'));assert(html.includes('VIEW SOURCE'));
-console.log('PASS: JavaScript syntax, local media references, 13 cards, achievement order, portrait/setup removal, Neon Rush links.');
+console.log('PASS: JavaScript syntax, local media references, 14 cards, achievement order, portrait/setup removal, Neon Rush and OverDrive links.');

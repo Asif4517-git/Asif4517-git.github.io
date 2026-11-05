@@ -2,6 +2,35 @@
    Only claims backed by the live sites, public repos or the portfolio's
    original copy are included. Statuses are deliberately explicit. */
 window.PROJECT_DETAILS = {
+  overdrive: {
+    kicker: "Game development · Web development",
+    title: "OverDrive",
+    status: "Live browser game",
+    statusType: "live",
+    summary: "A browser-based driving game featuring interactive gameplay, cars and immersive environments. Built as a personal game-development project, with a garage, circuit selection and a live driving HUD.",
+    built: [
+      "A vehicle-selection garage with a 3D viewer and eleven selectable cars.",
+      "Six environments, including Greater Noida Speedway and Munnar Hillclimb, explored in the live browser game.",
+      "Keyboard driving, selectable camera views and a HUD showing speed, gears, RPM, laps and standings.",
+      "Automatic and manual gearbox options, rebindable controls and touch controls for mobile devices."
+    ],
+    stack: ["React", "TypeScript", "Three.js", "Vite", "Web Audio API"],
+    learned: "Exploring how driving controls, vehicle presentation, camera views and environmental design fit together in a browser game.",
+    note: "OverDrive is a separate personal project from Neon Rush. Every image here is a real screenshot captured from the deployed OverDrive game through browser interaction. Cars and locations are procedural interpretations, not licensed models or surveyed reproductions; this is not a claim of calibrated vehicle simulation.",
+    shots: [
+      { src: "images/overdrive/04-circuit-driving.webp", cap: "Greater Noida Speedway — actual gameplay while accelerating" },
+      { src: "images/overdrive/06-munnar-driving.webp", cap: "Munnar Hillclimb — actual gameplay on an overcast hill road" },
+      { src: "images/overdrive/01-menu.webp", cap: "The live OverDrive starting screen" },
+      { src: "images/overdrive/02-garage.webp", cap: "Garage — selecting the BMW M3 Competition in the 3D vehicle viewer" },
+      { src: "images/overdrive/03-circuits.webp", cap: "Circuit selection — choose the road and environment" }
+    ],
+    links: [
+      { label: "PLAY LIVE", href: "https://asif4517-git.github.io/overdrive/", primary: true },
+      { label: "VIEW SOURCE", href: "https://github.com/Asif4517-git/overdrive" }
+    ]
+  },
+
+
   neon: {
     kicker: "Game development · Web development",
     title: "Neon Rush",
