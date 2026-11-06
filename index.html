@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/project-previews.css?v=contact-flow-3">
 </head>
 <body>
   <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
@@ -59,9 +60,9 @@
           <span>Class 10 · Kerala, India</span>
         </div>
         <h1 class="hero-title" id="heroTitle">
-          <span class="line reveal d1"><em>Asif</em></span>
-          <span class="line reveal d2">Shahrukh</span>
-          <span class="line reveal d3">Khan<span class="accent">.</span></span>
+          <span class="line reveal d1 particle-name" id="particleName" data-particle-text="ASIF"><span class="particle-fallback" aria-hidden="true"><em>Asif</em></span><canvas id="nameParticles" aria-hidden="true"></canvas><span class="sr-only">Asif</span></span>
+          <span class="line reveal d2 particle-name particle-wide" data-particle-text="Shahrukh" data-particle-tone="light"><span class="particle-fallback" aria-hidden="true">Shahrukh</span><canvas aria-hidden="true"></canvas><span class="sr-only">Shahrukh</span></span>
+          <span class="line reveal d3 particle-name particle-wide" data-particle-text="Khan." data-particle-tone="light"><span class="particle-fallback" aria-hidden="true">Khan<span class="accent">.</span></span><canvas aria-hidden="true"></canvas><span class="sr-only">Khan.</span></span>
         </h1>
         <p class="hero-lead reveal d4">
           A Class 10 student who builds things: ESP32 hardware, AI-assisted websites and interactive 3D worlds.
@@ -206,7 +207,7 @@
       <div class="project-grid" id="projectGrid">
 
         <article class="project-card featured reveal" data-category="web" data-project="neon">
-          <div class="project-visual neon-shot">
+          <div class="project-visual photo-preview neon-shot">
             <img src="images/updates/neon-live-05-driving-boost.webp" loading="lazy" decoding="async" width="1280" height="720" alt="Actual live-browser Neon Rush gameplay: a car on the neon circuit with the driving HUD">
             <span class="visual-tag">Live · Browser game</span>
           </div>
@@ -222,7 +223,7 @@
         </article>
 
         <article class="project-card featured reveal" data-category="web" data-project="overdrive">
-          <div class="project-visual neon-shot">
+          <div class="project-visual photo-preview neon-shot">
             <img src="images/overdrive/04-circuit-driving.webp" loading="lazy" decoding="async" width="1280" height="720" alt="Actual OverDrive gameplay: driving on Greater Noida Speedway with the speed, lap and standings HUD">
             <span class="visual-tag">Live · Browser game</span>
           </div>
@@ -239,7 +240,7 @@
 
 
         <article class="project-card featured reveal" data-category="sim" data-project="jln">
-          <div class="project-visual v-jln">
+          <div class="project-visual photo-preview v-jln">
             <img src="images/jln-01.webp" loading="lazy" decoding="async" width="1280" height="800" alt="Screenshot of the JLN Stadium Kochi 3D drone simulation showing the stadium bowl, match HUD and Kaloor surroundings">
             <span class="visual-tag">Live · Three.js</span>
           </div>
@@ -263,7 +264,7 @@
         </article>
 
         <article class="project-card featured reveal" data-category="web" data-project="chemlab">
-          <div class="project-visual v-chem">
+          <div class="project-visual photo-preview v-chem">
             <img src="images/previews/chemlab-home.webp" loading="lazy" decoding="async" width="1400" height="875" alt="Screenshot of the ChemLab Kerala home page with its dark teal dashboard and six learning modules">
             <span class="visual-tag">Live · EdTech</span>
           </div>
@@ -286,7 +287,7 @@
         </article>
 
         <article class="project-card reveal" data-category="embedded" data-project="nes">
-          <div class="project-visual real-build"><img src="images/updates/nes-build.webp" loading="lazy" decoding="async" width="1350" height="1800" alt="My real handheld prototype: TFT display, physical buttons and hand-wired perfboard"><span class="visual-tag">Actual build</span></div>
+          <div class="project-visual photo-preview real-build"><img src="images/updates/nes-build.webp" loading="lazy" decoding="async" width="1350" height="1800" alt="My real handheld prototype: TFT display, physical buttons and hand-wired perfboard"><span class="visual-tag">Actual build</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Embedded · Gaming</p>
@@ -300,7 +301,7 @@
         </article>
 
         <article class="project-card reveal" data-category="rgb" data-project="wled">
-          <div class="project-visual"><img src="images/updates/desk-warm.webp" loading="lazy" decoding="async" width="1800" height="1350" alt="My desk with warm and purple RGB ambient lighting"><span class="visual-tag">My WLED workspace</span></div>
+          <div class="project-visual photo-preview"><img src="images/updates/desk-warm.webp" loading="lazy" decoding="async" width="1800" height="1350" alt="My desk with warm and purple RGB ambient lighting"><span class="visual-tag">My WLED workspace</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Hardware · RGB</p>
@@ -315,13 +316,7 @@
         </article>
 
         <article class="project-card reveal" data-category="web" data-project="schooltv">
-          <div class="project-visual v-dash">
-            <div class="mini-dash">
-              <div class="md-top"><span></span><span></span></div>
-              <div class="md-clock">14:32</div>
-              <div class="md-ticker"></div>
-            </div>
-          </div>
+          <div class="project-visual custom-preview preview-schooltv"><div class="mini-tv miniature" role="img" aria-label="Illustrated school information screen with a clock, Malayalam notice and rotating announcements. Sample content."><div class="preview-top"><span>SCHOOL INFORMATION</span><span class="sample-led">DEMO</span></div><div class="tv-layout"><div><strong class="tv-clock">14:32</strong><small>MONDAY · SAMPLE DAY</small></div><div class="tv-slides"><p>Welcome to school<br><b>Learn. Make. Share.</b></p><p>അറിയിപ്പുകൾ<br><b>School announcements</b></p></div></div><div class="tv-ticker"><span>ILLUSTRATIVE NOTICE · Coding club after class · Bring your curiosity · </span></div></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Web · School tech</p>
@@ -335,13 +330,7 @@
         </article>
 
         <article class="project-card reveal" data-category="embedded" data-project="sensor">
-          <div class="project-visual v-sensor">
-            <div class="sensor-panel" aria-hidden="true">
-              <div class="sp-head"><i></i><i></i><i></i></div>
-              <div class="sp-bars"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-              <span class="sp-read">MQ-135 · ADC</span>
-            </div>
-          </div>
+          <div class="project-visual custom-preview preview-sensor"><div class="mini-sensor miniature" role="img" aria-label="Illustrated MQ-135 analog dashboard with sample ADC readings, an LCD and a changing trend graph. Not calibrated or live data."><div class="preview-top"><span>MQ-135 / ANALOG INPUT</span><span class="sample-led">SAMPLE</span></div><div class="sensor-layout"><div class="sensor-dial"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M12 58 A38 38 0 0 1 88 58"/><path class="dial-track" d="M12 58 A38 38 0 0 1 88 58"/><g class="dial-needle"><path d="M50 58 29 30"/><circle cx="50" cy="58" r="3"/></g></svg><small>RAW ADC · NOT PPM</small></div><div class="sample-lcd"><span>ANALOG INPUT</span><strong class="sample-reading">428</strong><small>I²C LCD · SAMPLE</small></div></div><svg class="sensor-trend" viewBox="0 0 300 28" aria-hidden="true"><path class="trend-grid" d="M0 14H300 M0 27H300"/><path class="trend-line" d="M0 20 15 19 30 21 45 14 60 16 75 8 90 12 105 11 120 18 135 13 150 15 165 5 180 10 195 8 210 17 225 15 240 21 255 14 270 17 285 12 300 15"/></svg></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Embedded · Sensors</p>
@@ -355,12 +344,7 @@
         </article>
 
         <article class="project-card reveal" data-category="embedded" data-project="radio">
-          <div class="project-visual v-radio">
-            <div class="eq" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <p class="visual-label">LIVE STREAM</p>
-          </div>
+          <div class="project-visual custom-preview preview-radio"><div class="mini-radio miniature" role="img" aria-label="Illustrated ESP32 internet radio with a sample station, tuning cursor and simulated audio output. No audio is playing."><div class="preview-top"><span>ESP32 INTERNET RADIO</span><span class="sample-led">ILLUSTRATION</span></div><div class="radio-layout"><div class="radio-speaker"><i></i></div><div class="radio-screen"><small>SAMPLE STATION</small><strong>Studio / 01</strong><span>Wi-Fi → Stream URL → I²S</span><svg viewBox="0 0 180 30" aria-hidden="true"><path class="radio-wave" d="M0 15h12l4-6 4 12 4-6h12l4-11 4 22 4-11h12l4-5 4 10 4-5h12l4-13 4 26 4-13h12l4-8 4 16 4-8h12l4-4 4 8 4-4h24"/></svg></div></div><div class="radio-tuner"><span>STREAM 01</span><i></i><span>STREAM 02</span></div></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Audio · Networking</p>
@@ -374,9 +358,7 @@
         </article>
 
         <article class="project-card reveal" data-category="embedded" data-project="marauder">
-          <div class="project-visual v-wifi">
-            <div class="radar"><i></i><i></i><i></i></div>
-          </div>
+          <div class="project-visual custom-preview preview-marauder"><div class="wireless-reference" role="img" aria-label="Upstream ESP32 Marauder device reference photo, not Asif's hardware, with an illustrative wireless topology"><img src="images/references/marauder-screen.webp" loading="lazy" decoding="async" width="532" height="262" alt="Annotated ESP32 Marauder device screen from the upstream project's documentation"><svg class="wifi-topology" viewBox="0 0 140 140" aria-hidden="true"><circle class="wifi-ring one" cx="70" cy="70" r="22"/><circle class="wifi-ring two" cx="70" cy="70" r="42"/><path d="M70 70 24 35M70 70 115 40M70 70 110 112"/><circle cx="70" cy="70" r="7"/><circle class="wifi-node" cx="24" cy="35" r="5"/><circle class="wifi-node" cx="115" cy="40" r="5"/><circle class="wifi-node" cx="110" cy="112" r="5"/><text class="wifi-demo-label" x="70" y="134" text-anchor="middle">TOPOLOGY DEMO</text></svg></div><span class="preview-caption"><a href="https://github.com/justcallmekoko/ESP32Marauder/blob/master/pictures/marauder%20screen.jfif" target="_blank" rel="noopener noreferrer">Upstream reference · not my device ↗</a></span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Wireless · Learning</p>
@@ -390,9 +372,7 @@
         </article>
 
         <article class="project-card reveal" data-category="web" data-project="airchat">
-          <div class="project-visual v-chat">
-            <div class="chat-bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          </div>
+          <div class="project-visual custom-preview preview-airchat"><div class="mini-chat miniature" role="img" aria-label="Illustrated Android messaging interface with example messages and a simulated relay connection. Not a screenshot or a real conversation."><div class="preview-top"><span>AIRCHAT / ANDROID</span><span class="chat-connection">● RELAY DEMO</span></div><div class="chat-message received">Got the prototype working?<small>Sample conversation</small></div><div class="chat-message sent">Yes — sending a test message.<small>Example · delivered ✓</small></div><div class="chat-message received last">Nice. Let's test reconnecting.</div><div class="chat-compose"><span>Message flow illustration</span><span aria-hidden="true">↗</span></div></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Android · Kotlin</p>
@@ -407,7 +387,7 @@
         </article>
 
         <article class="project-card reveal" data-category="rgb" data-project="pcsetup">
-          <div class="project-visual v-pc">
+          <div class="project-visual photo-preview v-pc">
             <img src="images/updates/desk-purple.webp" loading="lazy" decoding="async" width="1800" height="1350" alt="My new desk photograph: black PC tower, monitor and purple RGB ambient lighting with DIY wall decorations">
             <span class="visual-tag">Real photo</span>
           </div>
@@ -424,12 +404,7 @@
         </article>
 
         <article class="project-card reveal" data-category="early" data-project="billing">
-          <div class="project-visual v-bill">
-            <div class="bill-sheet">
-              <span></span><span></span><span class="wide"></span>
-              <span></span><span></span><span class="wide accent"></span>
-            </div>
-          </div>
+          <div class="project-visual custom-preview preview-billing"><div class="mini-pos miniature" role="img" aria-label="Illustrated billing interface with sample product rows: notebook 2 times 40 rupees, pen 1 times 10 rupees, total 90 rupees. Not a real transaction."><div class="preview-top"><span>BILLING / LOCAL EXPERIMENT</span><span class="sample-led">SAMPLE</span></div><div class="pos-head"><span>ITEM</span><span>QTY</span><span>AMOUNT</span></div><div class="pos-row"><span>Notebook</span><span>2 × ₹40</span><span>₹80</span></div><div class="pos-row second"><span>Pen</span><span>1 × ₹10</span><span>₹10</span></div><div class="pos-total"><span>SAMPLE TOTAL</span><strong>₹<span class="pos-sum">90</span></strong></div><div class="pos-note">Illustrative calculation · no transaction</div></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Software · Early experiment</p>
@@ -443,14 +418,7 @@
         </article>
 
         <article class="project-card reveal" data-category="early" data-project="rc">
-          <div class="project-visual v-rc">
-            <div class="rc-car" aria-hidden="true">
-              <span class="rc-body"></span>
-              <span class="rc-wheel a"></span>
-              <span class="rc-wheel b"></span>
-            </div>
-            <p class="visual-label">KID LAB</p>
-          </div>
+          <div class="project-visual custom-preview preview-rc"><div class="mini-rc miniature" role="img" aria-label="Original illustrated RC chassis showing battery, motor, receiver and steering servo. A mechanical concept, not a photograph of Asif's build."><div class="preview-top"><span>RC / INSIDE THE BUILD</span><span class="sample-led">ILLUSTRATION</span></div><svg class="rc-cutaway" viewBox="0 0 330 130" aria-hidden="true"><path class="rc-floor" d="M5 116H325"/><g class="rc-assembly"><g class="rc-wheel-detail"><circle cx="83" cy="92" r="23"/><path d="M63 82 103 102M63 102 103 82M83 71V113"/></g><g class="rc-wheel-detail rear"><circle cx="250" cy="92" r="23"/><path d="M230 82 270 102M230 102 270 82M250 71V113"/></g><path class="rc-shell" d="M46 76 72 48 133 32H212L245 50 282 61 292 80H46Z"/><path class="rc-window" d="M111 48 142 36H207L225 48Z"/><rect class="rc-chassis" x="80" y="62" width="173" height="23" rx="7"/><rect class="rc-battery" x="130" y="62" width="65" height="23" rx="3"/><path class="rc-power" d="M130 74H104M195 74H235"/><circle class="rc-motor" cx="235" cy="74" r="9"/><rect class="rc-servo" x="92" y="67" width="19" height="15" rx="2"/><path class="rc-antenna" d="M205 61 217 13"/></g><text x="134" y="77">BATTERY</text><text x="221" y="109">MOTOR</text><text x="60" y="39">STEERING</text><text x="228" y="20">RADIO RX</text></svg><div class="rc-flow">TRANSMITTER → RECEIVER → SERVO + MOTOR</div></div><span class="preview-caption">Illustrated preview · sample content</span></div>
           <div class="project-card-body">
             <div class="project-topline">
               <p class="project-kicker">Origin · Kid builder</p>
@@ -727,7 +695,7 @@
 
     <section class="contact" id="contact">
       <p class="eyebrow reveal">12 — Contact</p>
-      <h2 class="display reveal">Let’s build something.</h2>
+      <h2 class="display reveal particle-name particle-contact" data-particle-text="Let’s build something." data-particle-tone="light"><span class="particle-fallback" aria-hidden="true">Let’s build something.</span><canvas aria-hidden="true"></canvas><span class="sr-only">Let’s build something.</span></h2>
       <p class="contact-lead reveal">Projects, ideas, school tech, hardware, PCs — write to me or find me online.</p>
       <div class="contact-links reveal">
         <a class="mail" href="mailto:asifsrk4517@gmail.com">asifsrk4517@gmail.com</a>
@@ -789,8 +757,10 @@
     <button class="image-close btn btn-ghost" type="button" aria-label="Close full-size photograph">Close ✕</button>
     <figure><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="fullImage"><figcaption id="fullCaption"></figcaption></figure>
   </dialog>
+  <script src="js/particle-name.js?v=full-headings-3" defer></script>
+  <script src="js/project-previews.js?v=3" defer></script>
   <script src="js/media.js" defer></script>
   <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=cursor-3"></script>
 </body>
 </html>

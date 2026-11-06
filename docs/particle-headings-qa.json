@@ -1,0 +1,92 @@
+[
+  {
+    "width": 1440,
+    "reduced": false,
+    "headings": [
+      {
+        "text": "ASIF",
+        "particles": 1139,
+        "responded": true,
+        "meanDisplacement": 0.543472833015535
+      },
+      {
+        "text": "Shahrukh",
+        "particles": 2079,
+        "responded": true,
+        "meanDisplacement": 0.28344605997587663
+      },
+      {
+        "text": "Khan.",
+        "particles": 1081,
+        "responded": true,
+        "meanDisplacement": 0.540221382637551
+      },
+      {
+        "text": "Let’s build something.",
+        "particles": 1555,
+        "responded": true,
+        "meanDisplacement": 0.5559190808405245
+      }
+    ],
+    "modalCursorSafe": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "reduced": false,
+    "headings": [
+      {
+        "text": "ASIF",
+        "particles": 487,
+        "responded": true,
+        "meanDisplacement": 1.5140229564031746
+      },
+      {
+        "text": "Shahrukh",
+        "particles": 775,
+        "responded": true,
+        "meanDisplacement": 0.4133281636898902
+      },
+      {
+        "text": "Khan.",
+        "particles": 464,
+        "responded": true,
+        "meanDisplacement": 0.9929598521884622
+      },
+      {
+        "text": "Let’s build something.",
+        "particles": 912,
+        "responded": true,
+        "meanDisplacement": 1.5990330555987065
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 834,
+    "reduced": true,
+    "headings": [
+      {
+        "text": "ASIF",
+        "particles": 388,
+        "static": true
+      },
+      {
+        "text": "Shahrukh",
+        "particles": 735,
+        "static": true
+      },
+      {
+        "text": "Khan.",
+        "particles": 386,
+        "static": true
+      },
+      {
+        "text": "Let’s build something.",
+        "particles": 829,
+        "static": true
+      }
+    ],
+    "errors": []
+  }
+]

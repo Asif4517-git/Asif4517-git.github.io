@@ -176,7 +176,7 @@
 
   window.addEventListener("pointermove", (e) => {
     mx = e.clientX; my = e.clientY;
-    cursor?.classList.add("seen");
+    if (finePointer.matches && motionOK() && e.pointerType !== "touch") cursor?.classList.add("seen");
     if (portraitHot) {
       const r = portraitRect || portrait.getBoundingClientRect();
       const px = (mx - (r.left + r.width / 2)) / (r.width / 2);
@@ -185,6 +185,11 @@
       targetX = Math.max(-1, Math.min(1, -py)) * 5;
     }
   }, { passive: true });
+
+  window.addEventListener("pointerdown", () => cursor?.classList.add("is-down"));
+  window.addEventListener("pointerup", () => cursor?.classList.remove("is-down"));
+  window.addEventListener("blur", () => cursor?.classList.remove("seen", "is-down"));
+  document.addEventListener("pointerout", e => { if (!e.relatedTarget) cursor?.classList.remove("seen", "is-down"); });
 
   if (portrait) {
     portrait.addEventListener("pointerenter", () => {
