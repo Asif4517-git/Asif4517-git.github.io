@@ -1,0 +1,122 @@
+[
+  {
+    "mode": "animated",
+    "width": 390,
+    "headingHeight": 67.1875,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 4
+  },
+  {
+    "mode": "animated",
+    "width": 773,
+    "headingHeight": 40.890625,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 4
+  },
+  {
+    "mode": "animated",
+    "width": 834,
+    "headingHeight": 44.109375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 4
+  },
+  {
+    "mode": "animated",
+    "width": 1440,
+    "headingHeight": 73.59375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 4
+  },
+  {
+    "mode": "particle-script-blocked",
+    "width": 390,
+    "headingHeight": 67.1875,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "particle-script-blocked",
+    "width": 773,
+    "headingHeight": 40.890625,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "particle-script-blocked",
+    "width": 834,
+    "headingHeight": 44.109375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "particle-script-blocked",
+    "width": 1440,
+    "headingHeight": 73.59375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "no-js",
+    "width": 390,
+    "headingHeight": 67.1875,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "no-js",
+    "width": 773,
+    "headingHeight": 40.890625,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "no-js",
+    "width": 834,
+    "headingHeight": 44.109375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  },
+  {
+    "mode": "no-js",
+    "width": 1440,
+    "headingHeight": 73.59375,
+    "gap": 16,
+    "mailGap": 28,
+    "overflow": 0,
+    "centerOffset": 0,
+    "ready": 0
+  }
+]

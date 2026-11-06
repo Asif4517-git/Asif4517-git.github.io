@@ -1,0 +1,68 @@
+{
+  "particle": {
+    "hash": 500349322,
+    "count": 4374,
+    "width": 460,
+    "height": 92
+  },
+  "reacted": true,
+  "cards": 14,
+  "photos": 7,
+  "illustrations": 7,
+  "previews": [
+    {
+      "key": "schooltv",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "sensor",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "radio",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "marauder",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "airchat",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "billing",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    },
+    {
+      "key": "rc",
+      "visible": true,
+      "width": 399,
+      "height": 207
+    }
+  ],
+  "offscreenPaused": true,
+  "reducedStatic": true,
+  "mobileOverflow": 0,
+  "canvasFallback": true,
+  "errors": [],
+  "realPhotoSourcesPreserved": true,
+  "allProjectCardBodiesPreserved": true,
+  "touchPhysics": {
+    "particles": 502,
+    "meanDisplacementDuringTap": 1.500945290303468,
+    "meanDisplacementAfterSettling": 0.38276585493469806
+  }
+}
