@@ -1,0 +1,149 @@
+[
+  {
+    "width": 1440,
+    "reduced": false,
+    "cards": 15,
+    "overflow": 0,
+    "webCards": 6,
+    "links": [
+      {
+        "label": "PLAY LIVE",
+        "href": "https://asif4517-git.github.io/RealShift/",
+        "newTab": true
+      },
+      {
+        "label": "VIEW SOURCE",
+        "href": "https://github.com/Asif4517-git/RealShift",
+        "newTab": true
+      }
+    ],
+    "gallery": 5,
+    "images": [
+      {
+        "src": "images/realshift/02-engine-running.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/04-engine-cutaway.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/05-garage.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/06-data-log.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/01-dyno-bay.webp",
+        "width": 1600,
+        "height": 1000
+      }
+    ],
+    "contactGap": 16,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "reduced": false,
+    "cards": 15,
+    "overflow": 0,
+    "webCards": 6,
+    "links": [
+      {
+        "label": "PLAY LIVE",
+        "href": "https://asif4517-git.github.io/RealShift/",
+        "newTab": true
+      },
+      {
+        "label": "VIEW SOURCE",
+        "href": "https://github.com/Asif4517-git/RealShift",
+        "newTab": true
+      }
+    ],
+    "gallery": 5,
+    "images": [
+      {
+        "src": "images/realshift/02-engine-running.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/04-engine-cutaway.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/05-garage.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/06-data-log.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/01-dyno-bay.webp",
+        "width": 1600,
+        "height": 1000
+      }
+    ],
+    "contactGap": 16,
+    "errors": []
+  },
+  {
+    "width": 834,
+    "reduced": true,
+    "cards": 15,
+    "overflow": 0,
+    "webCards": 6,
+    "links": [
+      {
+        "label": "PLAY LIVE",
+        "href": "https://asif4517-git.github.io/RealShift/",
+        "newTab": true
+      },
+      {
+        "label": "VIEW SOURCE",
+        "href": "https://github.com/Asif4517-git/RealShift",
+        "newTab": true
+      }
+    ],
+    "gallery": 5,
+    "images": [
+      {
+        "src": "images/realshift/02-engine-running.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/04-engine-cutaway.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/05-garage.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/06-data-log.webp",
+        "width": 1600,
+        "height": 1000
+      },
+      {
+        "src": "images/realshift/01-dyno-bay.webp",
+        "width": 1600,
+        "height": 1000
+      }
+    ],
+    "contactGap": 16,
+    "errors": []
+  }
+]
