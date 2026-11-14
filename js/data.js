@@ -2,6 +2,36 @@
    Only claims backed by the live sites, public repos or the portfolio's
    original copy are included. Statuses are deliberately explicit. */
 window.PROJECT_DETAILS = {
+  realshift: {
+    kicker: "Interactive simulation · Web development",
+    title: "RealShift — Transmission & Dyno Lab",
+    status: "Live simulator",
+    statusType: "live",
+    summary: "An interactive browser-based chassis dyno simulator focused on engine behaviour, manual transmissions, clutch mechanics and working instrumentation. Start an engine, select a gear and apply throttle inside a 3D test bay.",
+    built: [
+      "A garage with eleven vehicle models, each carrying engine, gearbox and drivetrain parameters.",
+      "Engine start/stop, manual, assisted and bypass clutch modes, direct gear selection and rebindable keyboard controls.",
+      "A shared simulation state driving the instrument cluster, 3D scene and audio, with RPM, roller speed, gear, temperatures and warning indicators.",
+      "Dyno pulls with simulated power/torque traces, a saved-run archive and JSON export.",
+      "A Three.js dyno bay with selectable cameras and a cutaway engine view."
+    ],
+    stack: ["React", "TypeScript", "Three.js", "Vite", "Engine / clutch model", "Web Audio"],
+    learned: "Exploring how engine, clutch, gearbox and roller models can feed one coherent set of gauges, charts, audio and 3D visuals.",
+    note: "RealShift is a software simulation, not a physical dynamometer or calibrated vehicle test. Speed and wheel outputs are roller-derived simulation values; crank power and torque are estimates. Vehicle shapes are procedural interpretations, not licensed manufacturer models. Screenshots here come from the actual deployed app, operated through normal browser controls.",
+    shots: [
+      { src: "images/realshift/02-engine-running.webp", cap: "Engine running in first gear after real throttle input — simulated readings" },
+      { src: "images/realshift/04-engine-cutaway.webp", cap: "Cutaway camera revealing the engine and chassis in the 3D dyno bay" },
+      { src: "images/realshift/05-garage.webp", cap: "The garage — vehicle selection and model specifications" },
+      { src: "images/realshift/06-data-log.webp", cap: "Saved simulated dyno pull, power/torque trace and measurement methodology" },
+      { src: "images/realshift/01-dyno-bay.webp", cap: "The starting dyno-bay interface before the engine is started" }
+    ],
+    links: [
+      { label: "PLAY LIVE", href: "https://asif4517-git.github.io/RealShift/", primary: true },
+      { label: "VIEW SOURCE", href: "https://github.com/Asif4517-git/RealShift" }
+    ]
+  },
+
+
   overdrive: {
     kicker: "Game development · Web development",
     title: "OverDrive",
